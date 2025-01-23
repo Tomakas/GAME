@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'levels_screen.dart';
 import 'practise_screen.dart';
 import 'settings_screen.dart';
+import 'goals_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             // Tlačítko pro přechod do "Hra"
             ElevatedButton(
-              onPressed: () => _navigateTo(context, const GameScreen()),
+              onPressed: () => _navigateTo(context, const LevelsScreen()),
               child: const Text('Hra'),
             ),
             const SizedBox(height: 16),
@@ -34,6 +35,11 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () => _navigateTo(context, const PractiseScreen()),
               child: const Text('Procvičování'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () => _navigateTo(context, const GoalsScreen()),
+              child: const Text('Úspěchy'),
             ),
             const SizedBox(height: 16),
             // Tlačítko pro přechod do "Nastavení"

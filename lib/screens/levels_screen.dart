@@ -4,14 +4,14 @@ import 'sub_levels_screen.dart';
 
 /// Zobrazuje hlavní úrovně (1..10). Každá úroveň má 0–3 hvězdičky.
 /// Ty se nyní určují podle součtu hvězdiček v podúrovních.
-class GameScreen extends StatefulWidget {
-  const GameScreen({Key? key}) : super(key: key);
+class LevelsScreen extends StatefulWidget {
+  const LevelsScreen({Key? key}) : super(key: key);
 
   @override
-  State<GameScreen> createState() => _GameScreenState();
+  State<LevelsScreen> createState() => _LevelsScreenState();
 }
 
-class _GameScreenState extends State<GameScreen> {
+class _LevelsScreenState extends State<LevelsScreen> {
   final int totalLevels = 10;
 
   late List<int> starCounts; // Hvězdy hlavních úrovní (0–3)
