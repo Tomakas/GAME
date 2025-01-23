@@ -1,0 +1,4076 @@
+[
+    {
+        "ID": "1",
+        "CZ": "jídlo",
+        "EN": "food",
+        "Phonetic": "fuːd",
+        "Category": "Food"
+    },
+    {
+        "ID": "2",
+        "CZ": "maso",
+        "EN": "meat",
+        "Phonetic": "miːt",
+        "Category": "Food"
+    },
+    {
+        "ID": "3",
+        "CZ": "vejce",
+        "EN": "egg",
+        "Phonetic": "ɛg",
+        "Category": "Food"
+    },
+    {
+        "ID": "4",
+        "CZ": "cukr",
+        "EN": "sugar",
+        "Phonetic": "ˈʃʊgər",
+        "Category": "Food"
+    },
+    {
+        "ID": "5",
+        "CZ": "rýže",
+        "EN": "rice",
+        "Phonetic": "raɪs",
+        "Category": "Food"
+    },
+    {
+        "ID": "6",
+        "CZ": "snídaně",
+        "EN": "breakfast",
+        "Phonetic": "ˈbrɛkfəst",
+        "Category": "Food"
+    },
+    {
+        "ID": "7",
+        "CZ": "oběd",
+        "EN": "lunch",
+        "Phonetic": "lʌntʃ",
+        "Category": "Food"
+    },
+    {
+        "ID": "8",
+        "CZ": "večeře",
+        "EN": "dinner",
+        "Phonetic": "ˈdɪnər",
+        "Category": "Food"
+    },
+    {
+        "ID": "9",
+        "CZ": "máslo",
+        "EN": "butter",
+        "Phonetic": "ˈbʌtər",
+        "Category": "Food"
+    },
+    {
+        "ID": "10",
+        "CZ": "lžíce",
+        "EN": "spoon",
+        "Phonetic": "spuːn",
+        "Category": "Food"
+    },
+    {
+        "ID": "11",
+        "CZ": "vidlička",
+        "EN": "fork",
+        "Phonetic": "fɔːrk",
+        "Category": "Food"
+    },
+    {
+        "ID": "12",
+        "CZ": "svačina",
+        "EN": "snack",
+        "Phonetic": "snæk",
+        "Category": "Food"
+    },
+    {
+        "ID": "13",
+        "CZ": "ovoce",
+        "EN": "fruit",
+        "Phonetic": "fruːt",
+        "Category": "Food"
+    },
+    {
+        "ID": "14",
+        "CZ": "těstoviny",
+        "EN": "pasta",
+        "Phonetic": "ˈpæstə",
+        "Category": "Food"
+    },
+    {
+        "ID": "15",
+        "CZ": "sůl",
+        "EN": "salt",
+        "Phonetic": "sɔːlt",
+        "Category": "Food"
+    },
+    {
+        "ID": "16",
+        "CZ": "vařit",
+        "EN": "cook",
+        "Phonetic": "kʊk",
+        "Category": "Food"
+    },
+    {
+        "ID": "17",
+        "CZ": "koření",
+        "EN": "spices",
+        "Phonetic": "ˈspaɪsɪz",
+        "Category": "Food"
+    },
+    {
+        "ID": "18",
+        "CZ": "talíř",
+        "EN": "plate",
+        "Phonetic": "pleɪt",
+        "Category": "Food"
+    },
+    {
+        "ID": "19",
+        "CZ": "čaj",
+        "EN": "tea",
+        "Phonetic": "tiː",
+        "Category": "Food"
+    },
+    {
+        "ID": "20",
+        "CZ": "káva",
+        "EN": "coffee",
+        "Phonetic": "ˈkɔːfi",
+        "Category": "Food"
+    },
+    {
+        "ID": "21",
+        "CZ": "polévka",
+        "EN": "soup",
+        "Phonetic": "suːp",
+        "Category": "Food"
+    },
+    {
+        "ID": "22",
+        "CZ": "salát",
+        "EN": "salad",
+        "Phonetic": "ˈsæləd",
+        "Category": "Food"
+    },
+    {
+        "ID": "23",
+        "CZ": "jablko",
+        "EN": "apple",
+        "Phonetic": "ˈæpl",
+        "Category": "Food"
+    },
+    {
+        "ID": "24",
+        "CZ": "banán",
+        "EN": "banana",
+        "Phonetic": "bəˈnænə",
+        "Category": "Food"
+    },
+    {
+        "ID": "25",
+        "CZ": "mrkev",
+        "EN": "carrot",
+        "Phonetic": "ˈkærət",
+        "Category": "Food"
+    },
+    {
+        "ID": "26",
+        "CZ": "rajče",
+        "EN": "tomato",
+        "Phonetic": "təˈmeɪtoʊ",
+        "Category": "Food"
+    },
+    {
+        "ID": "27",
+        "CZ": "cibule",
+        "EN": "onion",
+        "Phonetic": "ˈʌnjən",
+        "Category": "Food"
+    },
+    {
+        "ID": "28",
+        "CZ": "brambory",
+        "EN": "potatoes",
+        "Phonetic": "pəˈteɪtoʊz",
+        "Category": "Food"
+    },
+    {
+        "ID": "29",
+        "CZ": "šunka",
+        "EN": "ham",
+        "Phonetic": "hæm",
+        "Category": "Food"
+    },
+    {
+        "ID": "30",
+        "CZ": "nůž",
+        "EN": "knife",
+        "Phonetic": "naɪf",
+        "Category": "Food"
+    },
+    {
+        "ID": "31",
+        "CZ": "sýr",
+        "EN": "cheese",
+        "Phonetic": "tʃiːz",
+        "Category": "Food"
+    },
+    {
+        "ID": "32",
+        "CZ": "ryba",
+        "EN": "fish",
+        "Phonetic": "fɪʃ",
+        "Category": "Food"
+    },
+    {
+        "ID": "33",
+        "CZ": "klobása",
+        "EN": "sausage",
+        "Phonetic": "ˈsɔːsɪdʒ",
+        "Category": "Food"
+    },
+    {
+        "ID": "34",
+        "CZ": "slanina",
+        "EN": "bacon",
+        "Phonetic": "ˈbeɪkən",
+        "Category": "Food"
+    },
+    {
+        "ID": "35",
+        "CZ": "pivo",
+        "EN": "beer",
+        "Phonetic": "bɪr",
+        "Category": "Food"
+    },
+    {
+        "ID": "36",
+        "CZ": "víno",
+        "EN": "wine",
+        "Phonetic": "waɪn",
+        "Category": "Food"
+    },
+    {
+        "ID": "37",
+        "CZ": "jogurt",
+        "EN": "yogurt",
+        "Phonetic": "ˈjoʊgərt",
+        "Category": "Food"
+    },
+    {
+        "ID": "38",
+        "CZ": "džus",
+        "EN": "juice",
+        "Phonetic": "dʒuːs",
+        "Category": "Food"
+    },
+    {
+        "ID": "39",
+        "CZ": "péct",
+        "EN": "bake",
+        "Phonetic": "beɪk",
+        "Category": "Food"
+    },
+    {
+        "ID": "40",
+        "CZ": "kukuřice",
+        "EN": "corn",
+        "Phonetic": "kɔːrn",
+        "Category": "Food"
+    },
+    {
+        "ID": "41",
+        "CZ": "jíst",
+        "EN": "eat",
+        "Phonetic": "iːt",
+        "Category": "Food"
+    },
+    {
+        "ID": "42",
+        "CZ": "jahoda",
+        "EN": "strawberry",
+        "Phonetic": "ˈstrɔːbəri",
+        "Category": "Food"
+    },
+    {
+        "ID": "43",
+        "CZ": "chleba",
+        "EN": "bread",
+        "Phonetic": "bred",
+        "Category": "Food"
+    },
+    {
+        "ID": "44",
+        "CZ": "třešeň",
+        "EN": "cherry",
+        "Phonetic": "ˈtʃɛri",
+        "Category": "Food"
+    },
+    {
+        "ID": "45",
+        "CZ": "pepř",
+        "EN": "pepper",
+        "Phonetic": "ˈpɛpər",
+        "Category": "Food"
+    },
+    {
+        "ID": "46",
+        "CZ": "hrášek",
+        "EN": "pea",
+        "Phonetic": "piː",
+        "Category": "Food"
+    },
+    {
+        "ID": "47",
+        "CZ": "fazole",
+        "EN": "beans",
+        "Phonetic": "biːnz",
+        "Category": "Food"
+    },
+    {
+        "ID": "48",
+        "CZ": "voda",
+        "EN": "water",
+        "Phonetic": "ˈwɔːtər",
+        "Category": "Food"
+    },
+    {
+        "ID": "49",
+        "CZ": "hruška",
+        "EN": "pear",
+        "Phonetic": "pɛr",
+        "Category": "Food"
+    },
+    {
+        "ID": "50",
+        "CZ": "zelenina",
+        "EN": "vegetable",
+        "Phonetic": "ˈvɛdʒtəbəl",
+        "Category": "Food"
+    },
+    {
+        "ID": "51",
+        "CZ": "okurka",
+        "EN": "cucumber",
+        "Phonetic": "ˈkjuːkʌmbər",
+        "Category": "Food"
+    },
+    {
+        "ID": "52",
+        "CZ": "omáčka",
+        "EN": "sauce",
+        "Phonetic": "sɔːs",
+        "Category": "Food"
+    },
+    {
+        "ID": "53",
+        "CZ": "borůvka",
+        "EN": "blueberry",
+        "Phonetic": "ˈbluːbɛri",
+        "Category": "Food"
+    },
+    {
+        "ID": "54",
+        "CZ": "med",
+        "EN": "honey",
+        "Phonetic": "ˈhʌni",
+        "Category": "Food"
+    },
+    {
+        "ID": "55",
+        "CZ": "citrón",
+        "EN": "lemon",
+        "Phonetic": "ˈlɛmən",
+        "Category": "Food"
+    },
+    {
+        "ID": "56",
+        "CZ": "dezert",
+        "EN": "dessert",
+        "Phonetic": "dɪˈzɜːrt",
+        "Category": "Food"
+    },
+    {
+        "ID": "57",
+        "CZ": "sklenice",
+        "EN": "glass",
+        "Phonetic": "ɡlæs",
+        "Category": "Food"
+    },
+    {
+        "ID": "58",
+        "CZ": "hrnek",
+        "EN": "mug",
+        "Phonetic": "mʌɡ",
+        "Category": "Food"
+    },
+    {
+        "ID": "59",
+        "CZ": "česnek",
+        "EN": "garlic",
+        "Phonetic": "ˈɡɑrlɪk",
+        "Category": "Food"
+    },
+    {
+        "ID": "60",
+        "CZ": "hlad",
+        "EN": "hunger",
+        "Phonetic": "ˈhʌŋɡər",
+        "Category": "Food"
+    },
+    {
+        "ID": "61",
+        "CZ": "strom",
+        "EN": "tree",
+        "Phonetic": "triː",
+        "Category": "Nature"
+    },
+    {
+        "ID": "62",
+        "CZ": "květina",
+        "EN": "flower",
+        "Phonetic": "ˈflaʊər",
+        "Category": "Nature"
+    },
+    {
+        "ID": "63",
+        "CZ": "hora",
+        "EN": "mountain",
+        "Phonetic": "ˈmaʊntən",
+        "Category": "Nature"
+    },
+    {
+        "ID": "64",
+        "CZ": "jezero",
+        "EN": "lake",
+        "Phonetic": "leɪk",
+        "Category": "Nature"
+    },
+    {
+        "ID": "65",
+        "CZ": "řeka",
+        "EN": "river",
+        "Phonetic": "ˈrɪvər",
+        "Category": "Nature"
+    },
+    {
+        "ID": "66",
+        "CZ": "les",
+        "EN": "forest",
+        "Phonetic": "ˈfɔːrɪst",
+        "Category": "Nature"
+    },
+    {
+        "ID": "67",
+        "CZ": "kořen",
+        "EN": "root",
+        "Phonetic": "ruːt",
+        "Category": "Nature"
+    },
+    {
+        "ID": "68",
+        "CZ": "oceán",
+        "EN": "ocean",
+        "Phonetic": "ˈoʊʃən",
+        "Category": "Nature"
+    },
+    {
+        "ID": "69",
+        "CZ": "písek",
+        "EN": "sand",
+        "Phonetic": "sænd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "70",
+        "CZ": "skála",
+        "EN": "rock",
+        "Phonetic": "rɑːk",
+        "Category": "Nature"
+    },
+    {
+        "ID": "71",
+        "CZ": "obloha",
+        "EN": "sky",
+        "Phonetic": "skaɪ",
+        "Category": "Nature"
+    },
+    {
+        "ID": "72",
+        "CZ": "sníh",
+        "EN": "snow",
+        "Phonetic": "snoʊ",
+        "Category": "Nature"
+    },
+    {
+        "ID": "73",
+        "CZ": "mlha",
+        "EN": "fog",
+        "Phonetic": "fɒɡ",
+        "Category": "Nature"
+    },
+    {
+        "ID": "74",
+        "CZ": "země",
+        "EN": "earth",
+        "Phonetic": "ɜːrθ",
+        "Category": "Nature"
+    },
+    {
+        "ID": "75",
+        "CZ": "bouřka",
+        "EN": "storm",
+        "Phonetic": "stɔːrm",
+        "Category": "Nature"
+    },
+    {
+        "ID": "76",
+        "CZ": "slunce",
+        "EN": "sun",
+        "Phonetic": "sʌn",
+        "Category": "Nature"
+    },
+    {
+        "ID": "77",
+        "CZ": "hvězda",
+        "EN": "star",
+        "Phonetic": "stɑːr",
+        "Category": "Nature"
+    },
+    {
+        "ID": "78",
+        "CZ": "tráva",
+        "EN": "grass",
+        "Phonetic": "ɡræs",
+        "Category": "Nature"
+    },
+    {
+        "ID": "79",
+        "CZ": "listí",
+        "EN": "leaves",
+        "Phonetic": "liːvz",
+        "Category": "Nature"
+    },
+    {
+        "ID": "80",
+        "CZ": "poušť",
+        "EN": "desert",
+        "Phonetic": "ˈdezərt",
+        "Category": "Nature"
+    },
+    {
+        "ID": "81",
+        "CZ": "moře",
+        "EN": "sea",
+        "Phonetic": "siː",
+        "Category": "Nature"
+    },
+    {
+        "ID": "82",
+        "CZ": "kopec",
+        "EN": "hill",
+        "Phonetic": "hɪl",
+        "Category": "Nature"
+    },
+    {
+        "ID": "83",
+        "CZ": "dřevo",
+        "EN": "wood",
+        "Phonetic": "wʊd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "84",
+        "CZ": "vítr",
+        "EN": "wind",
+        "Phonetic": "wɪnd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "85",
+        "CZ": "park",
+        "EN": "park",
+        "Phonetic": "pɑːrk",
+        "Category": "Nature"
+    },
+    {
+        "ID": "86",
+        "CZ": "uhlí",
+        "EN": "coal",
+        "Phonetic": "koʊl",
+        "Category": "Nature"
+    },
+    {
+        "ID": "87",
+        "CZ": "vesmír",
+        "EN": "universe",
+        "Phonetic": "ˈjuːnɪvɜːrs",
+        "Category": "Nature"
+    },
+    {
+        "ID": "88",
+        "CZ": "měsíc",
+        "EN": "moon",
+        "Phonetic": "muːn",
+        "Category": "Nature"
+    },
+    {
+        "ID": "89",
+        "CZ": "led",
+        "EN": "ice",
+        "Phonetic": "aɪs",
+        "Category": "Nature"
+    },
+    {
+        "ID": "90",
+        "CZ": "sever",
+        "EN": "north",
+        "Phonetic": "nɔːrθ",
+        "Category": "Nature"
+    },
+    {
+        "ID": "91",
+        "CZ": "jeskyně",
+        "EN": "cave",
+        "Phonetic": "keɪv",
+        "Category": "Nature"
+    },
+    {
+        "ID": "92",
+        "CZ": "jih",
+        "EN": "south",
+        "Phonetic": "saʊθ",
+        "Category": "Nature"
+    },
+    {
+        "ID": "93",
+        "CZ": "prales",
+        "EN": "rainforest",
+        "Phonetic": "ˈreɪnfɔːrɪst",
+        "Category": "Nature"
+    },
+    {
+        "ID": "94",
+        "CZ": "západ slunce",
+        "EN": "sunset",
+        "Phonetic": "ˈsʌnsɛt",
+        "Category": "Nature"
+    },
+    {
+        "ID": "95",
+        "CZ": "východ slunce",
+        "EN": "sunrise",
+        "Phonetic": "ˈsʌnˌraɪz",
+        "Category": "Nature"
+    },
+    {
+        "ID": "96",
+        "CZ": "vzduch",
+        "EN": "air",
+        "Phonetic": "ɛr",
+        "Category": "Nature"
+    },
+    {
+        "ID": "97",
+        "CZ": "východ",
+        "EN": "east",
+        "Phonetic": "iːst",
+        "Category": "Nature"
+    },
+    {
+        "ID": "98",
+        "CZ": "západ",
+        "EN": "west",
+        "Phonetic": "wɛst",
+        "Category": "Nature"
+    },
+    {
+        "ID": "99",
+        "CZ": "prach",
+        "EN": "dust",
+        "Phonetic": "dʌst",
+        "Category": "Nature"
+    },
+    {
+        "ID": "100",
+        "CZ": "železo",
+        "EN": "iron",
+        "Phonetic": "ˈaɪərn",
+        "Category": "Nature"
+    },
+    {
+        "ID": "101",
+        "CZ": "tsunami",
+        "EN": "tsunami",
+        "Phonetic": "tsuːˈnɑːmi",
+        "Category": "Nature"
+    },
+    {
+        "ID": "102",
+        "CZ": "blesk",
+        "EN": "lightning",
+        "Phonetic": "ˈlaɪtnɪŋ",
+        "Category": "Nature"
+    },
+    {
+        "ID": "103",
+        "CZ": "hrom",
+        "EN": "thunder",
+        "Phonetic": "ˈθʌndər",
+        "Category": "Nature"
+    },
+    {
+        "ID": "104",
+        "CZ": "déšť",
+        "EN": "rain",
+        "Phonetic": "reɪn",
+        "Category": "Nature"
+    },
+    {
+        "ID": "105",
+        "CZ": "ledovec",
+        "EN": "glacier",
+        "Phonetic": "ˈɡleɪʃər",
+        "Category": "Nature"
+    },
+    {
+        "ID": "106",
+        "CZ": "tma",
+        "EN": "darkness",
+        "Phonetic": "ˈdɑːrk.nəs",
+        "Category": "Nature"
+    },
+    {
+        "ID": "107",
+        "CZ": "sněhulák",
+        "EN": "snowman",
+        "Phonetic": "ˈsnoʊmæn",
+        "Category": "Nature"
+    },
+    {
+        "ID": "108",
+        "CZ": "výška",
+        "EN": "altitude",
+        "Phonetic": "ˈæltɪtjuːd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "109",
+        "CZ": "dálka",
+        "EN": "distance",
+        "Phonetic": "ˈdɪstəns",
+        "Category": "Nature"
+    },
+    {
+        "ID": "110",
+        "CZ": "rychlost",
+        "EN": "speed",
+        "Phonetic": "spiːd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "111",
+        "CZ": "důl",
+        "EN": "mine",
+        "Phonetic": "maɪn",
+        "Category": "Nature"
+    },
+    {
+        "ID": "112",
+        "CZ": "bylina",
+        "EN": "herb",
+        "Phonetic": "hɜːrb",
+        "Category": "Nature"
+    },
+    {
+        "ID": "113",
+        "CZ": "ostrov",
+        "EN": "island",
+        "Phonetic": "ˈaɪlənd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "114",
+        "CZ": "diamant",
+        "EN": "diamond",
+        "Phonetic": "ˈdaɪəmənd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "115",
+        "CZ": "zlato",
+        "EN": "gold",
+        "Phonetic": "ɡoʊld",
+        "Category": "Nature"
+    },
+    {
+        "ID": "116",
+        "CZ": "stříbro",
+        "EN": "silver",
+        "Phonetic": "ˈsɪlvər",
+        "Category": "Nature"
+    },
+    {
+        "ID": "117",
+        "CZ": "povodeň",
+        "EN": "flood",
+        "Phonetic": "flʌd",
+        "Category": "Nature"
+    },
+    {
+        "ID": "118",
+        "CZ": "zemětřesení",
+        "EN": "earthquake",
+        "Phonetic": "ˈɜːrθkweɪk",
+        "Category": "Nature"
+    },
+    {
+        "ID": "119",
+        "CZ": "metr",
+        "EN": "meter",
+        "Phonetic": "ˈmiːtər",
+        "Category": "Nature"
+    },
+    {
+        "ID": "120",
+        "CZ": "světlo",
+        "EN": "light",
+        "Phonetic": "laɪt",
+        "Category": "Nature"
+    },
+    {
+        "ID": "121",
+        "CZ": "pes",
+        "EN": "dog",
+        "Phonetic": "dɔɡ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "122",
+        "CZ": "kočka",
+        "EN": "cat",
+        "Phonetic": "kæt",
+        "Category": "Animals"
+    },
+    {
+        "ID": "123",
+        "CZ": "kůň",
+        "EN": "horse",
+        "Phonetic": "hɔːrs",
+        "Category": "Animals"
+    },
+    {
+        "ID": "124",
+        "CZ": "kráva",
+        "EN": "cow",
+        "Phonetic": "kaʊ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "125",
+        "CZ": "ovce",
+        "EN": "sheep",
+        "Phonetic": "ʃiːp",
+        "Category": "Animals"
+    },
+    {
+        "ID": "126",
+        "CZ": "prase",
+        "EN": "pig",
+        "Phonetic": "pɪɡ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "127",
+        "CZ": "králík",
+        "EN": "rabbit",
+        "Phonetic": "ˈræbɪt",
+        "Category": "Animals"
+    },
+    {
+        "ID": "128",
+        "CZ": "krocan",
+        "EN": "turkey",
+        "Phonetic": "ˈtɜːrki",
+        "Category": "Animals"
+    },
+    {
+        "ID": "129",
+        "CZ": "pták",
+        "EN": "bird",
+        "Phonetic": "bɜːrd",
+        "Category": "Animals"
+    },
+    {
+        "ID": "130",
+        "CZ": "osel",
+        "EN": "donkey",
+        "Phonetic": "ˈdɒŋki",
+        "Category": "Animals"
+    },
+    {
+        "ID": "131",
+        "CZ": "myš",
+        "EN": "mouse",
+        "Phonetic": "maʊs",
+        "Category": "Animals"
+    },
+    {
+        "ID": "132",
+        "CZ": "kachna",
+        "EN": "duck",
+        "Phonetic": "dʌk",
+        "Category": "Animals"
+    },
+    {
+        "ID": "133",
+        "CZ": "slepice",
+        "EN": "hen",
+        "Phonetic": "hɛn",
+        "Category": "Animals"
+    },
+    {
+        "ID": "134",
+        "CZ": "husa",
+        "EN": "goose",
+        "Phonetic": "ɡuːs",
+        "Category": "Animals"
+    },
+    {
+        "ID": "135",
+        "CZ": "želva",
+        "EN": "turtle",
+        "Phonetic": "ˈtɜːrtl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "136",
+        "CZ": "had",
+        "EN": "snake",
+        "Phonetic": "sneɪk",
+        "Category": "Animals"
+    },
+    {
+        "ID": "137",
+        "CZ": "žába",
+        "EN": "frog",
+        "Phonetic": "frɒɡ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "138",
+        "CZ": "motýl",
+        "EN": "butterfly",
+        "Phonetic": "ˈbʌtərflaɪ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "139",
+        "CZ": "beruška",
+        "EN": "ladybug",
+        "Phonetic": "ˈleɪdibʌɡ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "140",
+        "CZ": "šváb",
+        "EN": "cockroach",
+        "Phonetic": "ˈkɒkroʊʧ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "141",
+        "CZ": "lev",
+        "EN": "lion",
+        "Phonetic": "ˈlaɪən",
+        "Category": "Animals"
+    },
+    {
+        "ID": "142",
+        "CZ": "tygr",
+        "EN": "tiger",
+        "Phonetic": "ˈtaɪɡər",
+        "Category": "Animals"
+    },
+    {
+        "ID": "143",
+        "CZ": "slon",
+        "EN": "elephant",
+        "Phonetic": "ˈɛlɪfənt",
+        "Category": "Animals"
+    },
+    {
+        "ID": "144",
+        "CZ": "žirafa",
+        "EN": "giraffe",
+        "Phonetic": "dʒɪˈræf",
+        "Category": "Animals"
+    },
+    {
+        "ID": "145",
+        "CZ": "zebra",
+        "EN": "zebra",
+        "Phonetic": "ˈziːbrə",
+        "Category": "Animals"
+    },
+    {
+        "ID": "146",
+        "CZ": "opice",
+        "EN": "monkey",
+        "Phonetic": "ˈmʌŋki",
+        "Category": "Animals"
+    },
+    {
+        "ID": "147",
+        "CZ": "medvěd",
+        "EN": "bear",
+        "Phonetic": "bɛər",
+        "Category": "Animals"
+    },
+    {
+        "ID": "148",
+        "CZ": "vlk",
+        "EN": "wolf",
+        "Phonetic": "wʊlf",
+        "Category": "Animals"
+    },
+    {
+        "ID": "149",
+        "CZ": "včela",
+        "EN": "bee",
+        "Phonetic": "biː",
+        "Category": "Animals"
+    },
+    {
+        "ID": "150",
+        "CZ": "veverka",
+        "EN": "squirrel",
+        "Phonetic": "ˈskwɜːrəl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "151",
+        "CZ": "jelen",
+        "EN": "deer",
+        "Phonetic": "dɪr",
+        "Category": "Animals"
+    },
+    {
+        "ID": "152",
+        "CZ": "sova",
+        "EN": "owl",
+        "Phonetic": "aʊl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "153",
+        "CZ": "orel",
+        "EN": "eagle",
+        "Phonetic": "ˈiːɡl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "154",
+        "CZ": "tučňák",
+        "EN": "penguin",
+        "Phonetic": "ˈpɛŋɡwɪn",
+        "Category": "Animals"
+    },
+    {
+        "ID": "155",
+        "CZ": "papoušek",
+        "EN": "parrot",
+        "Phonetic": "ˈpærət",
+        "Category": "Animals"
+    },
+    {
+        "ID": "156",
+        "CZ": "krokodýl",
+        "EN": "crocodile",
+        "Phonetic": "ˈkrɒkədaɪl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "157",
+        "CZ": "žralok",
+        "EN": "shark",
+        "Phonetic": "ʃɑːrk",
+        "Category": "Animals"
+    },
+    {
+        "ID": "158",
+        "CZ": "delfín",
+        "EN": "dolphin",
+        "Phonetic": "ˈdɒlfɪn",
+        "Category": "Animals"
+    },
+    {
+        "ID": "159",
+        "CZ": "losos",
+        "EN": "salmon",
+        "Phonetic": "ˈsæmən",
+        "Category": "Animals"
+    },
+    {
+        "ID": "160",
+        "CZ": "žížala",
+        "EN": "earthworm",
+        "Phonetic": "ˈɜːθwɜːrm",
+        "Category": "Animals"
+    },
+    {
+        "ID": "161",
+        "CZ": "ježek",
+        "EN": "hedgehog",
+        "Phonetic": "ˈhɛdʒhɒɡ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "162",
+        "CZ": "liška",
+        "EN": "fox",
+        "Phonetic": "fɒks",
+        "Category": "Animals"
+    },
+    {
+        "ID": "163",
+        "CZ": "velbloud",
+        "EN": "camel",
+        "Phonetic": "ˈkæməl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "164",
+        "CZ": "panda",
+        "EN": "panda",
+        "Phonetic": "ˈpændə",
+        "Category": "Animals"
+    },
+    {
+        "ID": "165",
+        "CZ": "koza",
+        "EN": "goat",
+        "Phonetic": "ɡoʊt",
+        "Category": "Animals"
+    },
+    {
+        "ID": "166",
+        "CZ": "červ",
+        "EN": "worm",
+        "Phonetic": "wɜːrm",
+        "Category": "Animals"
+    },
+    {
+        "ID": "167",
+        "CZ": "pavouk",
+        "EN": "spider",
+        "Phonetic": "ˈspaɪdər",
+        "Category": "Animals"
+    },
+    {
+        "ID": "168",
+        "CZ": "velryba",
+        "EN": "whale",
+        "Phonetic": "weɪl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "169",
+        "CZ": "hroch",
+        "EN": "hippo",
+        "Phonetic": "ˌhɪpə",
+        "Category": "Animals"
+    },
+    {
+        "ID": "170",
+        "CZ": "vosa",
+        "EN": "wasp",
+        "Phonetic": "wɒsp",
+        "Category": "Animals"
+    },
+    {
+        "ID": "171",
+        "CZ": "rhino",
+        "EN": "rhino",
+        "Phonetic": "ˈraɪnoʊ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "172",
+        "CZ": "kuře",
+        "EN": "chicken",
+        "Phonetic": "ˈtʃɪkɪn",
+        "Category": "Animals"
+    },
+    {
+        "ID": "173",
+        "CZ": "krysa",
+        "EN": "rat",
+        "Phonetic": "ræt",
+        "Category": "Animals"
+    },
+    {
+        "ID": "174",
+        "CZ": "netopýr",
+        "EN": "bat",
+        "Phonetic": "bæt",
+        "Category": "Animals"
+    },
+    {
+        "ID": "175",
+        "CZ": "křeček",
+        "EN": "hamster",
+        "Phonetic": "ˈhæmstər",
+        "Category": "Animals"
+    },
+    {
+        "ID": "176",
+        "CZ": "býk",
+        "EN": "bull",
+        "Phonetic": "bʊl",
+        "Category": "Animals"
+    },
+    {
+        "ID": "177",
+        "CZ": "chobotnice",
+        "EN": "octopus",
+        "Phonetic": "ˈɒktəpəs",
+        "Category": "Animals"
+    },
+    {
+        "ID": "178",
+        "CZ": "světluška",
+        "EN": "firefly",
+        "Phonetic": "ˈfaɪərflaɪ",
+        "Category": "Animals"
+    },
+    {
+        "ID": "179",
+        "CZ": "tuňák",
+        "EN": "tuna",
+        "Phonetic": "ˈtuːnɑːk",
+        "Category": "Animals"
+    },
+    {
+        "ID": "180",
+        "CZ": "mravenec",
+        "EN": "ant",
+        "Phonetic": "ænt",
+        "Category": "Animals"
+    },
+    {
+        "ID": "181",
+        "CZ": "jedna",
+        "EN": "one",
+        "Phonetic": "wʌn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "182",
+        "CZ": "dvě",
+        "EN": "two",
+        "Phonetic": "tuː",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "183",
+        "CZ": "tři",
+        "EN": "three",
+        "Phonetic": "θriː",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "184",
+        "CZ": "čtyři",
+        "EN": "four",
+        "Phonetic": "fɔːr",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "185",
+        "CZ": "pět",
+        "EN": "five",
+        "Phonetic": "faɪv",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "186",
+        "CZ": "šest",
+        "EN": "six",
+        "Phonetic": "sɪks",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "187",
+        "CZ": "sedm",
+        "EN": "seven",
+        "Phonetic": "ˈsɛvən",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "188",
+        "CZ": "osm",
+        "EN": "eight",
+        "Phonetic": "eɪt",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "189",
+        "CZ": "devět",
+        "EN": "nine",
+        "Phonetic": "naɪn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "190",
+        "CZ": "deset",
+        "EN": "ten",
+        "Phonetic": "tɛn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "191",
+        "CZ": "červená",
+        "EN": "red",
+        "Phonetic": "rɛd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "192",
+        "CZ": "modrá",
+        "EN": "blue",
+        "Phonetic": "bluː",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "193",
+        "CZ": "zelená",
+        "EN": "green",
+        "Phonetic": "ɡriːn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "194",
+        "CZ": "žlutá",
+        "EN": "yellow",
+        "Phonetic": "ˈjɛloʊ",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "195",
+        "CZ": "černá",
+        "EN": "black",
+        "Phonetic": "blæk",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "196",
+        "CZ": "bílá",
+        "EN": "white",
+        "Phonetic": "waɪt",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "197",
+        "CZ": "oranžová",
+        "EN": "orange",
+        "Phonetic": "ˈɔːrɪndʒ",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "198",
+        "CZ": "fialová",
+        "EN": "purple",
+        "Phonetic": "ˈpɜːrpəl",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "199",
+        "CZ": "růžová",
+        "EN": "pink",
+        "Phonetic": "pɪŋk",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "200",
+        "CZ": "hnědá",
+        "EN": "brown",
+        "Phonetic": "braʊn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "201",
+        "CZ": "jedenáct",
+        "EN": "eleven",
+        "Phonetic": "ɪˈlɛvən",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "202",
+        "CZ": "dvanáct",
+        "EN": "twelve",
+        "Phonetic": "twɛlv",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "203",
+        "CZ": "třináct",
+        "EN": "thirteen",
+        "Phonetic": "ˈθɜːrˈtiːn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "204",
+        "CZ": "čtrnáct",
+        "EN": "fourteen",
+        "Phonetic": "ˈfɔːrˈtiːn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "205",
+        "CZ": "patnáct",
+        "EN": "fifteen",
+        "Phonetic": "ˈfɪfˈtiːn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "206",
+        "CZ": "šestnáct",
+        "EN": "sixteen",
+        "Phonetic": "ˈsɪksˈtiːn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "207",
+        "CZ": "sedmnáct",
+        "EN": "seventeen",
+        "Phonetic": "ˈsɛvənˈtiːn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "208",
+        "CZ": "devatenáct",
+        "EN": "nineteen",
+        "Phonetic": "naɪnˈtiːn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "209",
+        "CZ": "dvacet",
+        "EN": "twenty",
+        "Phonetic": "ˈtwɛnti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "210",
+        "CZ": "dvacet pět",
+        "EN": "twenty-five",
+        "Phonetic": "ˈtwɛnti faɪv",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "211",
+        "CZ": "první",
+        "EN": "first",
+        "Phonetic": "fɜːrst",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "212",
+        "CZ": "druhý",
+        "EN": "second",
+        "Phonetic": "ˈsɛkənd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "213",
+        "CZ": "třetí, třetina",
+        "EN": "third",
+        "Phonetic": "θɜːrd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "214",
+        "CZ": "nula",
+        "EN": "zero",
+        "Phonetic": "ˈzɪroʊ",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "215",
+        "CZ": "čtvrtina",
+        "EN": "quarter",
+        "Phonetic": "ˈkwɔːrtər",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "216",
+        "CZ": "polovina",
+        "EN": "half",
+        "Phonetic": "hæf",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "217",
+        "CZ": "neviditelný",
+        "EN": "invisible",
+        "Phonetic": "ɪnˈvɪzəbl",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "218",
+        "CZ": "šedá",
+        "EN": "gray",
+        "Phonetic": "ɡreɪ",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "219",
+        "CZ": "tmavě modrá",
+        "EN": "dark blue",
+        "Phonetic": "dɑːrk bluː",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "220",
+        "CZ": "světle žlutá",
+        "EN": "light yellow",
+        "Phonetic": "laɪt ˈjɛloʊ",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "221",
+        "CZ": "třicet",
+        "EN": "thirty",
+        "Phonetic": "ˈθɜːrti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "222",
+        "CZ": "čtyřicet",
+        "EN": "forty",
+        "Phonetic": "ˈfɔːrti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "223",
+        "CZ": "padesát",
+        "EN": "fifty",
+        "Phonetic": "ˈfɪfti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "224",
+        "CZ": "šedesát",
+        "EN": "sixty",
+        "Phonetic": "ˈsɪksti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "225",
+        "CZ": "sedmdesát",
+        "EN": "seventy",
+        "Phonetic": "ˈsɛvənti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "226",
+        "CZ": "osmdesát",
+        "EN": "eighty",
+        "Phonetic": "ˈeɪti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "227",
+        "CZ": "devadesát",
+        "EN": "ninety",
+        "Phonetic": "ˈnaɪnti",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "228",
+        "CZ": "sto",
+        "EN": "hundred",
+        "Phonetic": "ˈhʌndrəd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "229",
+        "CZ": "sto jedna",
+        "EN": "one hundred and one",
+        "Phonetic": "wʌn ˈhʌndrəd ənd wʌn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "230",
+        "CZ": "sto deset",
+        "EN": "one hundred and ten",
+        "Phonetic": "wʌn ˈhʌndrəd ənd tɛn",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "231",
+        "CZ": "zlatá",
+        "EN": "golden",
+        "Phonetic": "ˈɡoʊldən",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "232",
+        "CZ": "metalíza",
+        "EN": "metallic",
+        "Phonetic": "məˈtælɪk",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "233",
+        "CZ": "dvě stě",
+        "EN": "two hundred",
+        "Phonetic": "tuː ˈhʌndrəd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "234",
+        "CZ": "tři sta",
+        "EN": "three hundred",
+        "Phonetic": "θriː ˈhʌndrəd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "235",
+        "CZ": "pět set",
+        "EN": "five hundred",
+        "Phonetic": "faɪv ˈhʌndrəd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "236",
+        "CZ": "osm set",
+        "EN": "eight hundred",
+        "Phonetic": "eɪt ˈhʌndrəd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "237",
+        "CZ": "tisíc",
+        "EN": "thousand",
+        "Phonetic": "ˈθaʊzənd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "238",
+        "CZ": "deset tisíc",
+        "EN": "ten thousand",
+        "Phonetic": "tɛn ˈθaʊzənd",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "239",
+        "CZ": "milion",
+        "EN": "million",
+        "Phonetic": "ˈmɪljən",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "240",
+        "CZ": "duha",
+        "EN": "rainbow",
+        "Phonetic": "ˈreɪnboʊ",
+        "Category": "Numbers, Colors"
+    },
+    {
+        "ID": "241",
+        "CZ": "dům",
+        "EN": "house",
+        "Phonetic": "haʊs",
+        "Category": "Home"
+    },
+    {
+        "ID": "242",
+        "CZ": "byt",
+        "EN": "apartment",
+        "Phonetic": "əˈpɑːrtmənt",
+        "Category": "Home"
+    },
+    {
+        "ID": "243",
+        "CZ": "pokoj",
+        "EN": "room",
+        "Phonetic": "ruːm",
+        "Category": "Home"
+    },
+    {
+        "ID": "244",
+        "CZ": "kuchyň",
+        "EN": "kitchen",
+        "Phonetic": "ˈkɪtʃən",
+        "Category": "Home"
+    },
+    {
+        "ID": "245",
+        "CZ": "koupelna",
+        "EN": "bathroom",
+        "Phonetic": "ˈbæθruːm",
+        "Category": "Home"
+    },
+    {
+        "ID": "246",
+        "CZ": "obývák",
+        "EN": "living room",
+        "Phonetic": "ˈlɪvɪŋ ruːm",
+        "Category": "Home"
+    },
+    {
+        "ID": "247",
+        "CZ": "ložnice",
+        "EN": "bedroom",
+        "Phonetic": "ˈbɛd ruːm",
+        "Category": "Home"
+    },
+    {
+        "ID": "248",
+        "CZ": "trouba",
+        "EN": "oven",
+        "Phonetic": "ˈʌvən",
+        "Category": "Home"
+    },
+    {
+        "ID": "249",
+        "CZ": "zahrada",
+        "EN": "garden",
+        "Phonetic": "ˈɡɑːrdən",
+        "Category": "Home"
+    },
+    {
+        "ID": "250",
+        "CZ": "okno",
+        "EN": "window",
+        "Phonetic": "ˈwɪndoʊ",
+        "Category": "Home"
+    },
+    {
+        "ID": "251",
+        "CZ": "dveře",
+        "EN": "door",
+        "Phonetic": "dɔːr",
+        "Category": "Home"
+    },
+    {
+        "ID": "252",
+        "CZ": "stůl",
+        "EN": "table",
+        "Phonetic": "ˈteɪbl",
+        "Category": "Home"
+    },
+    {
+        "ID": "253",
+        "CZ": "židle",
+        "EN": "chair",
+        "Phonetic": "tʃɛər",
+        "Category": "Home"
+    },
+    {
+        "ID": "254",
+        "CZ": "postel",
+        "EN": "bed",
+        "Phonetic": "bɛd",
+        "Category": "Home"
+    },
+    {
+        "ID": "255",
+        "CZ": "křeslo",
+        "EN": "armchair",
+        "Phonetic": "ˈɑːrmtʃɛər",
+        "Category": "Home"
+    },
+    {
+        "ID": "256",
+        "CZ": "televize",
+        "EN": "television",
+        "Phonetic": "ˈtɛləˌvɪʒən",
+        "Category": "Home"
+    },
+    {
+        "ID": "257",
+        "CZ": "zámek",
+        "EN": "castle",
+        "Phonetic": "ˈkæsəl",
+        "Category": "Home"
+    },
+    {
+        "ID": "258",
+        "CZ": "domov",
+        "EN": "home",
+        "Phonetic": "hoʊm",
+        "Category": "Home"
+    },
+    {
+        "ID": "259",
+        "CZ": "bezdomovec",
+        "EN": "homeless",
+        "Phonetic": "ˈhoʊmləs",
+        "Category": "Home"
+    },
+    {
+        "ID": "260",
+        "CZ": "obrázek",
+        "EN": "picture",
+        "Phonetic": "ˈpɪktʃər",
+        "Category": "Home"
+    },
+    {
+        "ID": "261",
+        "CZ": "strop",
+        "EN": "ceiling",
+        "Phonetic": "ˈsiːlɪŋ",
+        "Category": "Home"
+    },
+    {
+        "ID": "262",
+        "CZ": "podlaha",
+        "EN": "floor",
+        "Phonetic": "flɔːr",
+        "Category": "Home"
+    },
+    {
+        "ID": "263",
+        "CZ": "stěna",
+        "EN": "wall",
+        "Phonetic": "wɔːl",
+        "Category": "Home"
+    },
+    {
+        "ID": "264",
+        "CZ": "zámek",
+        "EN": "lock",
+        "Phonetic": "lɒk",
+        "Category": "Home"
+    },
+    {
+        "ID": "265",
+        "CZ": "zrcadlo",
+        "EN": "mirror",
+        "Phonetic": "ˈmɪrər",
+        "Category": "Home"
+    },
+    {
+        "ID": "266",
+        "CZ": "koberec",
+        "EN": "carpet",
+        "Phonetic": "ˈkɑːrpɪt",
+        "Category": "Home"
+    },
+    {
+        "ID": "267",
+        "CZ": "záclona",
+        "EN": "curtain",
+        "Phonetic": "ˈkɜːrtən",
+        "Category": "Home"
+    },
+    {
+        "ID": "268",
+        "CZ": "lampa",
+        "EN": "lamp",
+        "Phonetic": "læmp",
+        "Category": "Home"
+    },
+    {
+        "ID": "269",
+        "CZ": "sporák",
+        "EN": "stove",
+        "Phonetic": "stoʊv",
+        "Category": "Home"
+    },
+    {
+        "ID": "270",
+        "CZ": "lednička",
+        "EN": "refrigerator",
+        "Phonetic": "rɪˈfrɪdʒəˌreɪtər",
+        "Category": "Home"
+    },
+    {
+        "ID": "271",
+        "CZ": "mikrovlnka",
+        "EN": "microwave",
+        "Phonetic": "ˈmaɪkrəˌweɪv",
+        "Category": "Home"
+    },
+    {
+        "ID": "272",
+        "CZ": "myčka",
+        "EN": "dishwasher",
+        "Phonetic": "ˈdɪʃˌwɑːʃər",
+        "Category": "Home"
+    },
+    {
+        "ID": "273",
+        "CZ": "komín",
+        "EN": "chimney",
+        "Phonetic": "ˈtʃɪməni",
+        "Category": "Home"
+    },
+    {
+        "ID": "274",
+        "CZ": "garáž",
+        "EN": "garage",
+        "Phonetic": "ɡəˈrɑːʒ",
+        "Category": "Home"
+    },
+    {
+        "ID": "275",
+        "CZ": "terasa",
+        "EN": "terrace",
+        "Phonetic": "ˈtɛrəs",
+        "Category": "Home"
+    },
+    {
+        "ID": "276",
+        "CZ": "topení",
+        "EN": "heating",
+        "Phonetic": "ˈhiːtɪŋ",
+        "Category": "Home"
+    },
+    {
+        "ID": "277",
+        "CZ": "bazén",
+        "EN": "pool",
+        "Phonetic": "puːl",
+        "Category": "Home"
+    },
+    {
+        "ID": "278",
+        "CZ": "sprcha",
+        "EN": "shower",
+        "Phonetic": "ˈʃaʊər",
+        "Category": "Home"
+    },
+    {
+        "ID": "279",
+        "CZ": "záchod",
+        "EN": "toilet",
+        "Phonetic": "ˈtɔɪlɪt",
+        "Category": "Home"
+    },
+    {
+        "ID": "280",
+        "CZ": "pohovka",
+        "EN": "sofa",
+        "Phonetic": "ˈsoʊfə",
+        "Category": "Home"
+    },
+    {
+        "ID": "281",
+        "CZ": "schody",
+        "EN": "stairs",
+        "Phonetic": "stɛərz",
+        "Category": "Home"
+    },
+    {
+        "ID": "282",
+        "CZ": "brána",
+        "EN": "gate",
+        "Phonetic": "ɡeɪt",
+        "Category": "Home"
+    },
+    {
+        "ID": "283",
+        "CZ": "vana",
+        "EN": "bathtub",
+        "Phonetic": "ˈbæθtʌb",
+        "Category": "Home"
+    },
+    {
+        "ID": "284",
+        "CZ": "vchod",
+        "EN": "entrance",
+        "Phonetic": "ˈɛntrəns",
+        "Category": "Home"
+    },
+    {
+        "ID": "285",
+        "CZ": "nábytek",
+        "EN": "furniture",
+        "Phonetic": "ˈfɜːrnɪtʃər",
+        "Category": "Home"
+    },
+    {
+        "ID": "286",
+        "CZ": "polštář",
+        "EN": "pillow",
+        "Phonetic": "ˈpɪloʊ",
+        "Category": "Home"
+    },
+    {
+        "ID": "287",
+        "CZ": "deka",
+        "EN": "blanket",
+        "Phonetic": "ˈblæŋkɪt",
+        "Category": "Home"
+    },
+    {
+        "ID": "288",
+        "CZ": "větrák",
+        "EN": "fan",
+        "Phonetic": "fæn",
+        "Category": "Home"
+    },
+    {
+        "ID": "289",
+        "CZ": "dřez",
+        "EN": "sink",
+        "Phonetic": "sɪŋk",
+        "Category": "Home"
+    },
+    {
+        "ID": "290",
+        "CZ": "pračka",
+        "EN": "washing machine",
+        "Phonetic": "ˈwɒʃɪŋ məˌʃiːn",
+        "Category": "Home"
+    },
+    {
+        "ID": "291",
+        "CZ": "bydlet",
+        "EN": "live",
+        "Phonetic": "lɪv",
+        "Category": "Home"
+    },
+    {
+        "ID": "292",
+        "CZ": "osvětlení",
+        "EN": "lighting",
+        "Phonetic": "ˈlaɪtɪŋ",
+        "Category": "Home"
+    },
+    {
+        "ID": "293",
+        "CZ": "střecha",
+        "EN": "roof",
+        "Phonetic": "ruːf",
+        "Category": "Home"
+    },
+    {
+        "ID": "294",
+        "CZ": "sklep",
+        "EN": "cellar",
+        "Phonetic": "ˈsɛlər",
+        "Category": "Home"
+    },
+    {
+        "ID": "295",
+        "CZ": "stavět",
+        "EN": "build",
+        "Phonetic": "bɪld",
+        "Category": "Home"
+    },
+    {
+        "ID": "296",
+        "CZ": "spát",
+        "EN": "sleep",
+        "Phonetic": "sliːp",
+        "Category": "Home"
+    },
+    {
+        "ID": "297",
+        "CZ": "hodiny",
+        "EN": "clock",
+        "Phonetic": "klɑːk",
+        "Category": "Home"
+    },
+    {
+        "ID": "298",
+        "CZ": "soused",
+        "EN": "neighbor",
+        "Phonetic": "ˈneɪbər",
+        "Category": "Home"
+    },
+    {
+        "ID": "299",
+        "CZ": "uklízet",
+        "EN": "clean",
+        "Phonetic": "kliːn",
+        "Category": "Home"
+    },
+    {
+        "ID": "300",
+        "CZ": "stěhovat",
+        "EN": "move",
+        "Phonetic": "muːv",
+        "Category": "Home"
+    },
+    {
+        "ID": "301",
+        "CZ": "auto",
+        "EN": "car",
+        "Phonetic": "kɑːr",
+        "Category": "Travel"
+    },
+    {
+        "ID": "302",
+        "CZ": "vlak",
+        "EN": "train",
+        "Phonetic": "treɪn",
+        "Category": "Travel"
+    },
+    {
+        "ID": "303",
+        "CZ": "letadlo",
+        "EN": "plane",
+        "Phonetic": "pleɪn",
+        "Category": "Travel"
+    },
+    {
+        "ID": "304",
+        "CZ": "loď",
+        "EN": "boat",
+        "Phonetic": "boʊt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "305",
+        "CZ": "vlakové nádraží",
+        "EN": "train station",
+        "Phonetic": "treɪn ˈsteɪʃən",
+        "Category": "Travel"
+    },
+    {
+        "ID": "306",
+        "CZ": "letecké nádraží",
+        "EN": "airport",
+        "Phonetic": "ˈɛrˌpɔːrt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "307",
+        "CZ": "cestovní pas",
+        "EN": "passport",
+        "Phonetic": "ˈpæspɔːrt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "308",
+        "CZ": "vízum",
+        "EN": "visa",
+        "Phonetic": "ˈviːzə",
+        "Category": "Travel"
+    },
+    {
+        "ID": "309",
+        "CZ": "mapa",
+        "EN": "map",
+        "Phonetic": "mæp",
+        "Category": "Travel"
+    },
+    {
+        "ID": "310",
+        "CZ": "cesta",
+        "EN": "road",
+        "Phonetic": "roʊd",
+        "Category": "Travel"
+    },
+    {
+        "ID": "311",
+        "CZ": "letiště",
+        "EN": "terminal",
+        "Phonetic": "ˈtɜːrmənəl",
+        "Category": "Travel"
+    },
+    {
+        "ID": "312",
+        "CZ": "jízdenka",
+        "EN": "ticket",
+        "Phonetic": "ˈtɪkɪt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "313",
+        "CZ": "palubní vstupenka",
+        "EN": "boarding pass",
+        "Phonetic": "ˈbɔːrdɪŋ pæs",
+        "Category": "Travel"
+    },
+    {
+        "ID": "314",
+        "CZ": "cestovní zavazadlo",
+        "EN": "luggage",
+        "Phonetic": "ˈlʌɡɪdʒ",
+        "Category": "Travel"
+    },
+    {
+        "ID": "315",
+        "CZ": "cestovní pojištění",
+        "EN": "insurance",
+        "Phonetic": "ɪnˈʃʊərəns",
+        "Category": "Travel"
+    },
+    {
+        "ID": "316",
+        "CZ": "cestovní itinerář",
+        "EN": "itinerary",
+        "Phonetic": "aɪˈtɪnərɛri",
+        "Category": "Travel"
+    },
+    {
+        "ID": "317",
+        "CZ": "hotel",
+        "EN": "hotel",
+        "Phonetic": "hoʊˈtɛl",
+        "Category": "Travel"
+    },
+    {
+        "ID": "318",
+        "CZ": "rezervace",
+        "EN": "reservation",
+        "Phonetic": "ˌrɛzərˈveɪʃən",
+        "Category": "Travel"
+    },
+    {
+        "ID": "319",
+        "CZ": "cestovní průvodce",
+        "EN": "guidebook",
+        "Phonetic": "ˈɡaɪdbʊk",
+        "Category": "Travel"
+    },
+    {
+        "ID": "320",
+        "CZ": "cestovní autobus",
+        "EN": "coach",
+        "Phonetic": "koʊtʃ",
+        "Category": "Travel"
+    },
+    {
+        "ID": "321",
+        "CZ": "přestup",
+        "EN": "transfer",
+        "Phonetic": "trænsˈfɜːr",
+        "Category": "Travel"
+    },
+    {
+        "ID": "322",
+        "CZ": "cestovní příprava",
+        "EN": "preparation",
+        "Phonetic": "ˌprɛpəˈreɪʃən",
+        "Category": "Travel"
+    },
+    {
+        "ID": "323",
+        "CZ": "taxi",
+        "EN": "taxi",
+        "Phonetic": "ˈtæksi",
+        "Category": "Travel"
+    },
+    {
+        "ID": "324",
+        "CZ": "autobus",
+        "EN": "bus",
+        "Phonetic": "bʌs",
+        "Category": "Travel"
+    },
+    {
+        "ID": "325",
+        "CZ": "metro",
+        "EN": "subway",
+        "Phonetic": "ˈmɛtroʊ",
+        "Category": "Travel"
+    },
+    {
+        "ID": "326",
+        "CZ": "tramvaj",
+        "EN": "tram",
+        "Phonetic": "træm",
+        "Category": "Travel"
+    },
+    {
+        "ID": "327",
+        "CZ": "kolo",
+        "EN": "bicycle",
+        "Phonetic": "ˈbaɪsɪkl",
+        "Category": "Travel"
+    },
+    {
+        "ID": "328",
+        "CZ": "motocykl",
+        "EN": "motorbike",
+        "Phonetic": "ˈmoʊtərbaɪk",
+        "Category": "Travel"
+    },
+    {
+        "ID": "329",
+        "CZ": "skútr",
+        "EN": "scooter",
+        "Phonetic": "ˈskuːtər",
+        "Category": "Travel"
+    },
+    {
+        "ID": "330",
+        "CZ": "trajekt",
+        "EN": "ferry",
+        "Phonetic": "ˈfɛri",
+        "Category": "Travel"
+    },
+    {
+        "ID": "331",
+        "CZ": "přístav",
+        "EN": "port",
+        "Phonetic": "pɔrt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "332",
+        "CZ": "brána",
+        "EN": "gate",
+        "Phonetic": "ɡeɪt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "333",
+        "CZ": "celní",
+        "EN": "customs",
+        "Phonetic": "ˈkʌstəmz",
+        "Category": "Travel"
+    },
+    {
+        "ID": "334",
+        "CZ": "imigrace",
+        "EN": "immigration",
+        "Phonetic": "ˌɪmɪˈɡreɪʃən",
+        "Category": "Travel"
+    },
+    {
+        "ID": "335",
+        "CZ": "bezpečnost",
+        "EN": "security",
+        "Phonetic": "sɪˈkjʊərəti",
+        "Category": "Travel"
+    },
+    {
+        "ID": "336",
+        "CZ": "let",
+        "EN": "flight",
+        "Phonetic": "flaɪt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "337",
+        "CZ": "odlet",
+        "EN": "departure",
+        "Phonetic": "dɪˈpɑːrtʃər",
+        "Category": "Travel"
+    },
+    {
+        "ID": "338",
+        "CZ": "přílet",
+        "EN": "arrival",
+        "Phonetic": "əˈraɪvəl",
+        "Category": "Travel"
+    },
+    {
+        "ID": "339",
+        "CZ": "letuška",
+        "EN": "flight attendant",
+        "Phonetic": "flaɪt əˈtɛndənt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "340",
+        "CZ": "pilot",
+        "EN": "pilot",
+        "Phonetic": "ˈpaɪlət",
+        "Category": "Travel"
+    },
+    {
+        "ID": "341",
+        "CZ": "dráha",
+        "EN": "runway",
+        "Phonetic": "ˈrʌnweɪ",
+        "Category": "Travel"
+    },
+    {
+        "ID": "342",
+        "CZ": "terminál",
+        "EN": "terminal",
+        "Phonetic": "tərˈmɪnəl",
+        "Category": "Travel"
+    },
+    {
+        "ID": "343",
+        "CZ": "kufr",
+        "EN": "suitcase",
+        "Phonetic": "ˈsuːtkeɪs",
+        "Category": "Travel"
+    },
+    {
+        "ID": "344",
+        "CZ": "batoh",
+        "EN": "backpack",
+        "Phonetic": "ˈbækˌpæk",
+        "Category": "Travel"
+    },
+    {
+        "ID": "345",
+        "CZ": "sedadlo",
+        "EN": "seat",
+        "Phonetic": "sit",
+        "Category": "Travel"
+    },
+    {
+        "ID": "346",
+        "CZ": "ulička",
+        "EN": "aisle",
+        "Phonetic": "aɪl",
+        "Category": "Travel"
+    },
+    {
+        "ID": "347",
+        "CZ": "odbavení",
+        "EN": "check-in",
+        "Phonetic": "ˈtʃɛkˌɪn",
+        "Category": "Travel"
+    },
+    {
+        "ID": "348",
+        "CZ": "odhlášení",
+        "EN": "check-out",
+        "Phonetic": "ˈtʃɛkˌaʊt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "349",
+        "CZ": "nástup",
+        "EN": "boarding",
+        "Phonetic": "ˈbɔrdɪŋ",
+        "Category": "Travel"
+    },
+    {
+        "ID": "350",
+        "CZ": "východ",
+        "EN": "exit",
+        "Phonetic": "ˈɛɡzɪt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "351",
+        "CZ": "zpoždění",
+        "EN": "delay",
+        "Phonetic": "dɪˈleɪ",
+        "Category": "Travel"
+    },
+    {
+        "ID": "352",
+        "CZ": "jízdní řád",
+        "EN": "schedule",
+        "Phonetic": "ˈskɛdʒuːl",
+        "Category": "Travel"
+    },
+    {
+        "ID": "353",
+        "CZ": "trasa",
+        "EN": "route",
+        "Phonetic": "ruːt",
+        "Category": "Travel"
+    },
+    {
+        "ID": "354",
+        "CZ": "navigace",
+        "EN": "navigation",
+        "Phonetic": "ˌnævɪˈɡeɪʃən",
+        "Category": "Travel"
+    },
+    {
+        "ID": "355",
+        "CZ": "směr",
+        "EN": "direction",
+        "Phonetic": "dəˈrɛkʃən",
+        "Category": "Travel"
+    },
+    {
+        "ID": "356",
+        "CZ": "měna",
+        "EN": "currency",
+        "Phonetic": "ˈkɜːrənsi",
+        "Category": "Travel"
+    },
+    {
+        "ID": "357",
+        "CZ": "směna",
+        "EN": "exchange",
+        "Phonetic": "ɪksˈʧeɪndʒ",
+        "Category": "Travel"
+    },
+    {
+        "ID": "358",
+        "CZ": "peníze",
+        "EN": "money",
+        "Phonetic": "ˈmʌni",
+        "Category": "Travel"
+    },
+    {
+        "ID": "359",
+        "CZ": "výlet",
+        "EN": "trip",
+        "Phonetic": "trɪp",
+        "Category": "Travel"
+    },
+    {
+        "ID": "360",
+        "CZ": "prohlídka",
+        "EN": "tour",
+        "Phonetic": "tʊr",
+        "Category": "Travel"
+    },
+    {
+        "ID": "361",
+        "CZ": "matka",
+        "EN": "mother",
+        "Phonetic": "ˈmʌðər",
+        "Category": "Family"
+    },
+    {
+        "ID": "362",
+        "CZ": "otec",
+        "EN": "father",
+        "Phonetic": "ˈfɑːðər",
+        "Category": "Family"
+    },
+    {
+        "ID": "363",
+        "CZ": "bratr",
+        "EN": "brother",
+        "Phonetic": "ˈbrʌðər",
+        "Category": "Family"
+    },
+    {
+        "ID": "364",
+        "CZ": "sestra",
+        "EN": "sister",
+        "Phonetic": "ˈsɪstər",
+        "Category": "Family"
+    },
+    {
+        "ID": "365",
+        "CZ": "dítě",
+        "EN": "child",
+        "Phonetic": "tʃaɪld",
+        "Category": "Family"
+    },
+    {
+        "ID": "366",
+        "CZ": "dcera",
+        "EN": "daughter",
+        "Phonetic": "ˈdɔːtər",
+        "Category": "Family"
+    },
+    {
+        "ID": "367",
+        "CZ": "syn",
+        "EN": "son",
+        "Phonetic": "sʌn",
+        "Category": "Family"
+    },
+    {
+        "ID": "368",
+        "CZ": "teta",
+        "EN": "aunt",
+        "Phonetic": "ænt",
+        "Category": "Family"
+    },
+    {
+        "ID": "369",
+        "CZ": "strýc",
+        "EN": "uncle",
+        "Phonetic": "ˈʌŋkəl",
+        "Category": "Family"
+    },
+    {
+        "ID": "370",
+        "CZ": "babička",
+        "EN": "grandmother",
+        "Phonetic": "ˈɡrænˌmʌðər",
+        "Category": "Family"
+    },
+    {
+        "ID": "371",
+        "CZ": "dědeček",
+        "EN": "grandfather",
+        "Phonetic": "ˈɡrænˌfɑːðər",
+        "Category": "Family"
+    },
+    {
+        "ID": "372",
+        "CZ": "synovec",
+        "EN": "nephew",
+        "Phonetic": "ˈnɛfjuː",
+        "Category": "Family"
+    },
+    {
+        "ID": "373",
+        "CZ": "neteř",
+        "EN": "niece",
+        "Phonetic": "niːs",
+        "Category": "Family"
+    },
+    {
+        "ID": "374",
+        "CZ": "světec",
+        "EN": "cousin",
+        "Phonetic": "ˈkʌzn",
+        "Category": "Family"
+    },
+    {
+        "ID": "375",
+        "CZ": "snoubenec",
+        "EN": "fiancé",
+        "Phonetic": "fiˈɑːnseɪ",
+        "Category": "Family"
+    },
+    {
+        "ID": "376",
+        "CZ": "svatba",
+        "EN": "wedding",
+        "Phonetic": "ˈwɛdɪŋ",
+        "Category": "Family"
+    },
+    {
+        "ID": "377",
+        "CZ": "rodiče",
+        "EN": "parents",
+        "Phonetic": "ˈpɛrənts",
+        "Category": "Family"
+    },
+    {
+        "ID": "378",
+        "CZ": "rodina",
+        "EN": "family",
+        "Phonetic": "ˈfæməli",
+        "Category": "Family"
+    },
+    {
+        "ID": "379",
+        "CZ": "příbuzní",
+        "EN": "relatives",
+        "Phonetic": "ˈrɛləˌtɪvz",
+        "Category": "Family"
+    },
+    {
+        "ID": "380",
+        "CZ": "generace",
+        "EN": "generation",
+        "Phonetic": "ˌdʒɛnəˈreɪʃən",
+        "Category": "Family"
+    },
+    {
+        "ID": "381",
+        "CZ": "původ",
+        "EN": "ancestry",
+        "Phonetic": "ænˈsɛstri",
+        "Category": "Family"
+    },
+    {
+        "ID": "382",
+        "CZ": "dědičnost",
+        "EN": "heritage",
+        "Phonetic": "ˈhɛrɪtɪdʒ",
+        "Category": "Family"
+    },
+    {
+        "ID": "383",
+        "CZ": "manžel",
+        "EN": "husband",
+        "Phonetic": "ˈhʌzbənd",
+        "Category": "Family"
+    },
+    {
+        "ID": "384",
+        "CZ": "manželka",
+        "EN": "wife",
+        "Phonetic": "waɪf",
+        "Category": "Family"
+    },
+    {
+        "ID": "385",
+        "CZ": "nevěsta",
+        "EN": "bride",
+        "Phonetic": "braɪd",
+        "Category": "Family"
+    },
+    {
+        "ID": "386",
+        "CZ": "ženich",
+        "EN": "groom",
+        "Phonetic": "ɡruːm",
+        "Category": "Family"
+    },
+    {
+        "ID": "387",
+        "CZ": "vdovec",
+        "EN": "widower",
+        "Phonetic": "ˈwɪdoʊvər",
+        "Category": "Family"
+    },
+    {
+        "ID": "388",
+        "CZ": "vdova",
+        "EN": "widow",
+        "Phonetic": "ˈwɪdoʊ",
+        "Category": "Family"
+    },
+    {
+        "ID": "389",
+        "CZ": "švagr",
+        "EN": "brother-in-law",
+        "Phonetic": "ˈbrʌðər ɪn lɔː",
+        "Category": "Family"
+    },
+    {
+        "ID": "390",
+        "CZ": "švagrová",
+        "EN": "sister-in-law",
+        "Phonetic": "ˈsɪstər ɪn lɔː",
+        "Category": "Family"
+    },
+    {
+        "ID": "391",
+        "CZ": "zeť",
+        "EN": "son-in-law",
+        "Phonetic": "sʌn ɪn lɔː",
+        "Category": "Family"
+    },
+    {
+        "ID": "392",
+        "CZ": "snacha",
+        "EN": "daughter-in-law",
+        "Phonetic": "ˈdɔːtər ɪn lɔː",
+        "Category": "Family"
+    },
+    {
+        "ID": "393",
+        "CZ": "prarodiče",
+        "EN": "grandparents",
+        "Phonetic": "ˈɡrænˌpɛərənts",
+        "Category": "Family"
+    },
+    {
+        "ID": "394",
+        "CZ": "děda",
+        "EN": "grandfather",
+        "Phonetic": "ˈɡrænˌfɑːðər",
+        "Category": "Family"
+    },
+    {
+        "ID": "395",
+        "CZ": "babička",
+        "EN": "grandmother",
+        "Phonetic": "ˈɡrænˌmʌðər",
+        "Category": "Family"
+    },
+    {
+        "ID": "396",
+        "CZ": "sestřenice",
+        "EN": "female cousin",
+        "Phonetic": "ˈfimeɪl ˈkʌzn",
+        "Category": "Family"
+    },
+    {
+        "ID": "397",
+        "CZ": "bratranc",
+        "EN": "male cousin",
+        "Phonetic": "meɪl ˈkʌzn",
+        "Category": "Family"
+    },
+    {
+        "ID": "398",
+        "CZ": "exmanžel",
+        "EN": "ex-husband",
+        "Phonetic": "ɛksˈhʌzbənd",
+        "Category": "Family"
+    },
+    {
+        "ID": "399",
+        "CZ": "exmanželka",
+        "EN": "ex-wife",
+        "Phonetic": "ɛks waɪf",
+        "Category": "Family"
+    },
+    {
+        "ID": "400",
+        "CZ": "adoptivní rodič",
+        "EN": "adoptive parent",
+        "Phonetic": "əˈdɑːptɪv ˈpɛərənt",
+        "Category": "Family"
+    },
+    {
+        "ID": "401",
+        "CZ": "opatrovník",
+        "EN": "guardian",
+        "Phonetic": "ˈɡɑːrdiən",
+        "Category": "Family"
+    },
+    {
+        "ID": "402",
+        "CZ": "sirotek",
+        "EN": "orphan",
+        "Phonetic": "ˈɔːrfən",
+        "Category": "Family"
+    },
+    {
+        "ID": "403",
+        "CZ": "čas",
+        "EN": "time",
+        "Phonetic": "taɪm",
+        "Category": "Time"
+    },
+    {
+        "ID": "404",
+        "CZ": "hodina",
+        "EN": "hour",
+        "Phonetic": "ˈaʊər",
+        "Category": "Time"
+    },
+    {
+        "ID": "405",
+        "CZ": "minuta",
+        "EN": "minute",
+        "Phonetic": "ˈmɪnɪt",
+        "Category": "Time"
+    },
+    {
+        "ID": "406",
+        "CZ": "sekunda",
+        "EN": "second",
+        "Phonetic": "ˈsɛkənd",
+        "Category": "Time"
+    },
+    {
+        "ID": "407",
+        "CZ": "den",
+        "EN": "day",
+        "Phonetic": "deɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "408",
+        "CZ": "týden",
+        "EN": "week",
+        "Phonetic": "wiːk",
+        "Category": "Time"
+    },
+    {
+        "ID": "409",
+        "CZ": "měsíc",
+        "EN": "month",
+        "Phonetic": "mʌnθ",
+        "Category": "Time"
+    },
+    {
+        "ID": "410",
+        "CZ": "rok",
+        "EN": "year",
+        "Phonetic": "jɪər",
+        "Category": "Time"
+    },
+    {
+        "ID": "411",
+        "CZ": "včera",
+        "EN": "yesterday",
+        "Phonetic": "ˌjɛstərˈdeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "412",
+        "CZ": "dnes",
+        "EN": "today",
+        "Phonetic": "təˈdeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "413",
+        "CZ": "zítra",
+        "EN": "tomorrow",
+        "Phonetic": "təˈmɒroʊ",
+        "Category": "Time"
+    },
+    {
+        "ID": "414",
+        "CZ": "ráno",
+        "EN": "morning",
+        "Phonetic": "ˈmɔːrnɪŋ",
+        "Category": "Time"
+    },
+    {
+        "ID": "415",
+        "CZ": "odpoledne",
+        "EN": "afternoon",
+        "Phonetic": "ˌæftərˈnuːn",
+        "Category": "Time"
+    },
+    {
+        "ID": "416",
+        "CZ": "večer",
+        "EN": "evening",
+        "Phonetic": "ˈiːvnɪŋ",
+        "Category": "Time"
+    },
+    {
+        "ID": "417",
+        "CZ": "noc",
+        "EN": "night",
+        "Phonetic": "naɪt",
+        "Category": "Time"
+    },
+    {
+        "ID": "418",
+        "CZ": "půlnoc",
+        "EN": "midnight",
+        "Phonetic": "ˈmɪdnaɪt",
+        "Category": "Time"
+    },
+    {
+        "ID": "419",
+        "CZ": "svítání",
+        "EN": "dawn",
+        "Phonetic": "dɔn",
+        "Category": "Time"
+    },
+    {
+        "ID": "420",
+        "CZ": "soumrak",
+        "EN": "dusk",
+        "Phonetic": "dʌsk",
+        "Category": "Time"
+    },
+    {
+        "ID": "421",
+        "CZ": "poledne",
+        "EN": "noon",
+        "Phonetic": "nuːn",
+        "Category": "Time"
+    },
+    {
+        "ID": "422",
+        "CZ": "století",
+        "EN": "century",
+        "Phonetic": "ˈsɛntʃəri",
+        "Category": "Time"
+    },
+    {
+        "ID": "423",
+        "CZ": "kalendář",
+        "EN": "calendar",
+        "Phonetic": "ˈkælɪndər",
+        "Category": "Time"
+    },
+    {
+        "ID": "424",
+        "CZ": "hodinky",
+        "EN": "watch",
+        "Phonetic": "wɒtʃ",
+        "Category": "Time"
+    },
+    {
+        "ID": "425",
+        "CZ": "časové pásmo",
+        "EN": "timezone",
+        "Phonetic": "ˈtaɪmzoʊn",
+        "Category": "Time"
+    },
+    {
+        "ID": "426",
+        "CZ": "víkend",
+        "EN": "weekend",
+        "Phonetic": "ˈwiːkɛnd",
+        "Category": "Time"
+    },
+    {
+        "ID": "427",
+        "CZ": "okamžik",
+        "EN": "moment",
+        "Phonetic": "ˈmoʊmənt",
+        "Category": "Time"
+    },
+    {
+        "ID": "428",
+        "CZ": "zpoždění",
+        "EN": "delay",
+        "Phonetic": "dɪˈleɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "429",
+        "CZ": "doba",
+        "EN": "duration",
+        "Phonetic": "djuˈreɪʃən",
+        "Category": "Time"
+    },
+    {
+        "ID": "430",
+        "CZ": "začátek",
+        "EN": "beginning",
+        "Phonetic": "bɪˈɡɪnɪŋ",
+        "Category": "Time"
+    },
+    {
+        "ID": "431",
+        "CZ": "konec",
+        "EN": "end",
+        "Phonetic": "ɛnd",
+        "Category": "Time"
+    },
+    {
+        "ID": "432",
+        "CZ": "plán",
+        "EN": "plan",
+        "Phonetic": "plæn",
+        "Category": "Time"
+    },
+    {
+        "ID": "433",
+        "CZ": "interval",
+        "EN": "interval",
+        "Phonetic": "ˈɪntərvəl",
+        "Category": "Time"
+    },
+    {
+        "ID": "434",
+        "CZ": "vždy",
+        "EN": "always",
+        "Phonetic": "ˈɔːlweɪz",
+        "Category": "Time"
+    },
+    {
+        "ID": "435",
+        "CZ": "někdy",
+        "EN": "sometimes",
+        "Phonetic": "ˈsʌmˌtaɪmz",
+        "Category": "Time"
+    },
+    {
+        "ID": "436",
+        "CZ": "často",
+        "EN": "often",
+        "Phonetic": "ˈɔːfən",
+        "Category": "Time"
+    },
+    {
+        "ID": "437",
+        "CZ": "brzy",
+        "EN": "soon",
+        "Phonetic": "suːn",
+        "Category": "Time"
+    },
+    {
+        "ID": "438",
+        "CZ": "později",
+        "EN": "later",
+        "Phonetic": "ˈleɪtər",
+        "Category": "Time"
+    },
+    {
+        "ID": "439",
+        "CZ": "teď",
+        "EN": "now",
+        "Phonetic": "naʊ",
+        "Category": "Time"
+    },
+    {
+        "ID": "440",
+        "CZ": "okamžitě",
+        "EN": "immediately",
+        "Phonetic": "ɪˈmiːdiətli",
+        "Category": "Time"
+    },
+    {
+        "ID": "441",
+        "CZ": "minulost",
+        "EN": "past",
+        "Phonetic": "pæst",
+        "Category": "Time"
+    },
+    {
+        "ID": "442",
+        "CZ": "přítomnost",
+        "EN": "present",
+        "Phonetic": "ˈprɛzənt",
+        "Category": "Time"
+    },
+    {
+        "ID": "443",
+        "CZ": "budoucnost",
+        "EN": "future",
+        "Phonetic": "ˈfjuːtʃər",
+        "Category": "Time"
+    },
+    {
+        "ID": "444",
+        "CZ": "pondělí",
+        "EN": "Monday",
+        "Phonetic": "ˈmʌndeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "445",
+        "CZ": "úterý",
+        "EN": "Tuesday",
+        "Phonetic": "ˈtuːzdeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "446",
+        "CZ": "středa",
+        "EN": "Wednesday",
+        "Phonetic": "ˈwɛnzdeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "447",
+        "CZ": "čtvrtek",
+        "EN": "Thursday",
+        "Phonetic": "ˈθɜːrzdeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "448",
+        "CZ": "pátek",
+        "EN": "Friday",
+        "Phonetic": "ˈfraɪdeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "449",
+        "CZ": "sobota",
+        "EN": "Saturday",
+        "Phonetic": "ˈsætərdeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "450",
+        "CZ": "neděle",
+        "EN": "Sunday",
+        "Phonetic": "ˈsʌndeɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "451",
+        "CZ": "leden",
+        "EN": "January",
+        "Phonetic": "ˈdʒænjuˌɛri",
+        "Category": "Time"
+    },
+    {
+        "ID": "452",
+        "CZ": "únor",
+        "EN": "February",
+        "Phonetic": "ˈfɛbruˌɛri",
+        "Category": "Time"
+    },
+    {
+        "ID": "453",
+        "CZ": "březen",
+        "EN": "March",
+        "Phonetic": "mɑːrtʃ",
+        "Category": "Time"
+    },
+    {
+        "ID": "454",
+        "CZ": "duben",
+        "EN": "April",
+        "Phonetic": "ˈeɪprəl",
+        "Category": "Time"
+    },
+    {
+        "ID": "455",
+        "CZ": "květen",
+        "EN": "May",
+        "Phonetic": "meɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "456",
+        "CZ": "červen",
+        "EN": "June",
+        "Phonetic": "dʒuːn",
+        "Category": "Time"
+    },
+    {
+        "ID": "457",
+        "CZ": "červenec",
+        "EN": "July",
+        "Phonetic": "dʒuˈlaɪ",
+        "Category": "Time"
+    },
+    {
+        "ID": "458",
+        "CZ": "srpen",
+        "EN": "August",
+        "Phonetic": "ˈɔːɡəst",
+        "Category": "Time"
+    },
+    {
+        "ID": "459",
+        "CZ": "září",
+        "EN": "September",
+        "Phonetic": "sɛpˈtɛmbər",
+        "Category": "Time"
+    },
+    {
+        "ID": "460",
+        "CZ": "říjen",
+        "EN": "October",
+        "Phonetic": "ɒkˈtoʊbər",
+        "Category": "Time"
+    },
+    {
+        "ID": "461",
+        "CZ": "listopad",
+        "EN": "November",
+        "Phonetic": "noʊˈvɛmbər",
+        "Category": "Time"
+    },
+    {
+        "ID": "462",
+        "CZ": "prosinec",
+        "EN": "December",
+        "Phonetic": "dɪˈsɛmbər",
+        "Category": "Time"
+    },
+    {
+        "ID": "463",
+        "CZ": "čtení",
+        "EN": "reading",
+        "Phonetic": "ˈriːdɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "464",
+        "CZ": "psaní",
+        "EN": "writing",
+        "Phonetic": "ˈraɪtɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "465",
+        "CZ": "malování",
+        "EN": "painting",
+        "Phonetic": "ˈpeɪntɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "466",
+        "CZ": "fotografování",
+        "EN": "photography",
+        "Phonetic": "fəˈtɑːɡrəfi",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "467",
+        "CZ": "sport",
+        "EN": "sports",
+        "Phonetic": "spɔːrts",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "468",
+        "CZ": "hry",
+        "EN": "games",
+        "Phonetic": "ɡeɪmz",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "469",
+        "CZ": "hudba",
+        "EN": "music",
+        "Phonetic": "ˈmjuːzɪk",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "470",
+        "CZ": "tanec",
+        "EN": "dance",
+        "Phonetic": "dæns",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "471",
+        "CZ": "plavání",
+        "EN": "swimming",
+        "Phonetic": "ˈswɪmɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "472",
+        "CZ": "cestování",
+        "EN": "traveling",
+        "Phonetic": "ˈtrævəlɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "473",
+        "CZ": "zpívání",
+        "EN": "singing",
+        "Phonetic": "ˈsɪŋɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "474",
+        "CZ": "horská turistika",
+        "EN": "hiking",
+        "Phonetic": "ˈhaɪkɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "475",
+        "CZ": "pečení",
+        "EN": "baking",
+        "Phonetic": "ˈbeɪkɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "476",
+        "CZ": "programování",
+        "EN": "programming",
+        "Phonetic": "ˈproʊɡræmɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "477",
+        "CZ": "hraní",
+        "EN": "playing",
+        "Phonetic": "ˈpleɪɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "478",
+        "CZ": "modelářství",
+        "EN": "modeling",
+        "Phonetic": "ˈmɑːdlɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "479",
+        "CZ": "kurzy",
+        "EN": "courses",
+        "Phonetic": "ˈkɔːrsɪz",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "480",
+        "CZ": "hobby",
+        "EN": "hobby",
+        "Phonetic": "ˈhɑːbi",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "481",
+        "CZ": "kariéra",
+        "EN": "career",
+        "Phonetic": "kəˈrɪər",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "482",
+        "CZ": "relaxace",
+        "EN": "relaxing",
+        "Phonetic": "rɪˈlæksɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "483",
+        "CZ": "meditace",
+        "EN": "meditation",
+        "Phonetic": "ˌmɛdɪˈteɪʃən",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "484",
+        "CZ": "jóga",
+        "EN": "yoga",
+        "Phonetic": "ˈjoʊɡə",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "485",
+        "CZ": "šachy",
+        "EN": "chess",
+        "Phonetic": "tʃɛs",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "486",
+        "CZ": "běh",
+        "EN": "running",
+        "Phonetic": "ˈrʌnɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "487",
+        "CZ": "cyklistika",
+        "EN": "cycling",
+        "Phonetic": "ˈsaɪklɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "488",
+        "CZ": "tenis",
+        "EN": "tennis",
+        "Phonetic": "ˈtɛnɪs",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "489",
+        "CZ": "fotbal",
+        "EN": "football",
+        "Phonetic": "ˈfʊtbɔːl",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "490",
+        "CZ": "basketbal",
+        "EN": "basketball",
+        "Phonetic": "ˈbæskɪtbɔːl",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "491",
+        "CZ": "lyžování",
+        "EN": "skiing",
+        "Phonetic": "ˈskiːɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "492",
+        "CZ": "bruslení",
+        "EN": "skating",
+        "Phonetic": "ˈskeɪtɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "493",
+        "CZ": "box",
+        "EN": "boxing",
+        "Phonetic": "ˈbɑːksɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "494",
+        "CZ": "lezení",
+        "EN": "climbing",
+        "Phonetic": "ˈklaɪmɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "495",
+        "CZ": "rybaření",
+        "EN": "fishing",
+        "Phonetic": "ˈfɪʃɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "496",
+        "CZ": "jízda",
+        "EN": "riding",
+        "Phonetic": "ˈraɪdɪŋ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "497",
+        "CZ": "golf",
+        "EN": "golf",
+        "Phonetic": "ɡɑːlf",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "498",
+        "CZ": "šipky",
+        "EN": "darts",
+        "Phonetic": "dɑːrts",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "499",
+        "CZ": "míč",
+        "EN": "ball",
+        "Phonetic": "bɔːl",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "500",
+        "CZ": "hřiště",
+        "EN": "playground",
+        "Phonetic": "ˈpleɪˌɡraʊnd",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "501",
+        "CZ": "skóre",
+        "EN": "score",
+        "Phonetic": "skɔːr",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "502",
+        "CZ": "vítěz",
+        "EN": "winner",
+        "Phonetic": "ˈwɪnər",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "503",
+        "CZ": "poražený",
+        "EN": "loser",
+        "Phonetic": "ˈluːzər",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "504",
+        "CZ": "závod",
+        "EN": "race",
+        "Phonetic": "reɪs",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "505",
+        "CZ": "výzva",
+        "EN": "challenge",
+        "Phonetic": "ˈtʃælɪndʒ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "506",
+        "CZ": "fanoušek",
+        "EN": "fan",
+        "Phonetic": "fæn",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "507",
+        "CZ": "cvičit",
+        "EN": "exercise",
+        "Phonetic": "ˈɛksərˌsaɪz",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "508",
+        "CZ": "film",
+        "EN": "movie",
+        "Phonetic": "ˈmuːvi",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "509",
+        "CZ": "papír",
+        "EN": "paper",
+        "Phonetic": "ˈpeɪpər",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "510",
+        "CZ": "tužka",
+        "EN": "pencil",
+        "Phonetic": "ˈpɛnsəl",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "511",
+        "CZ": "kytara",
+        "EN": "guitar",
+        "Phonetic": "ɡɪˈtɑːr",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "512",
+        "CZ": "klavír",
+        "EN": "piano",
+        "Phonetic": "piˈænoʊ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "513",
+        "CZ": "medaile",
+        "EN": "medal",
+        "Phonetic": "ˈmɛdəl",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "514",
+        "CZ": "sedět",
+        "EN": "sit",
+        "Phonetic": "sɪt",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "515",
+        "CZ": "ležet",
+        "EN": "lie",
+        "Phonetic": "laɪ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "516",
+        "CZ": "skákat",
+        "EN": "jump",
+        "Phonetic": "dʒʌmp",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "517",
+        "CZ": "plavat",
+        "EN": "swim",
+        "Phonetic": "swɪm",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "518",
+        "CZ": "volejbal",
+        "EN": "volleyball",
+        "Phonetic": "ˈvɑːlibɔːl",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "519",
+        "CZ": "dron",
+        "EN": "drone",
+        "Phonetic": "droʊn",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "520",
+        "CZ": "kniha",
+        "EN": "book",
+        "Phonetic": "bʊk",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "521",
+        "CZ": "létat",
+        "EN": "fly",
+        "Phonetic": "flaɪ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "522",
+        "CZ": "sledovat",
+        "EN": "watch",
+        "Phonetic": "wɒtʃ",
+        "Category": "Hobbies"
+    },
+    {
+        "ID": "523",
+        "CZ": "Člověk",
+        "EN": "person",
+        "Phonetic": "ˈpɜːrsən",
+        "Category": "People"
+    },
+    {
+        "ID": "524",
+        "CZ": "muž",
+        "EN": "man",
+        "Phonetic": "mæn",
+        "Category": "People"
+    },
+    {
+        "ID": "525",
+        "CZ": "žena",
+        "EN": "woman",
+        "Phonetic": "ˈwʊmən",
+        "Category": "People"
+    },
+    {
+        "ID": "526",
+        "CZ": "děti",
+        "EN": "children",
+        "Phonetic": "ˈtʃɪldrən",
+        "Category": "People"
+    },
+    {
+        "ID": "527",
+        "CZ": "přítel",
+        "EN": "friend",
+        "Phonetic": "frɛnd",
+        "Category": "People"
+    },
+    {
+        "ID": "528",
+        "CZ": "učitel",
+        "EN": "teacher",
+        "Phonetic": "ˈtiːtʃər",
+        "Category": "People"
+    },
+    {
+        "ID": "529",
+        "CZ": "lékař",
+        "EN": "doctor",
+        "Phonetic": "ˈdɒktər",
+        "Category": "People"
+    },
+    {
+        "ID": "530",
+        "CZ": "policista",
+        "EN": "police",
+        "Phonetic": "pəˈliːs",
+        "Category": "People"
+    },
+    {
+        "ID": "531",
+        "CZ": "student",
+        "EN": "student",
+        "Phonetic": "ˈstudənt",
+        "Category": "People"
+    },
+    {
+        "ID": "532",
+        "CZ": "umělec",
+        "EN": "artist",
+        "Phonetic": "ˈɑːrtɪst",
+        "Category": "People"
+    },
+    {
+        "ID": "533",
+        "CZ": "herec",
+        "EN": "actor",
+        "Phonetic": "ˈæktər",
+        "Category": "People"
+    },
+    {
+        "ID": "534",
+        "CZ": "kuchař",
+        "EN": "cook",
+        "Phonetic": "kʊk",
+        "Category": "People"
+    },
+    {
+        "ID": "535",
+        "CZ": "řidič",
+        "EN": "driver",
+        "Phonetic": "ˈdraɪvər",
+        "Category": "People"
+    },
+    {
+        "ID": "536",
+        "CZ": "vědec",
+        "EN": "scientist",
+        "Phonetic": "ˈsaɪəntɪst",
+        "Category": "People"
+    },
+    {
+        "ID": "537",
+        "CZ": "farmář",
+        "EN": "farmer",
+        "Phonetic": "ˈfɑːrmər",
+        "Category": "People"
+    },
+    {
+        "ID": "538",
+        "CZ": "spisovatel",
+        "EN": "writer",
+        "Phonetic": "ˈraɪtər",
+        "Category": "People"
+    },
+    {
+        "ID": "539",
+        "CZ": "technik",
+        "EN": "technician",
+        "Phonetic": "tɛkˈnɪʃən",
+        "Category": "People"
+    },
+    {
+        "ID": "540",
+        "CZ": "oko",
+        "EN": "eye",
+        "Phonetic": "aɪ",
+        "Category": "People"
+    },
+    {
+        "ID": "541",
+        "CZ": "nos",
+        "EN": "nose",
+        "Phonetic": "noʊz",
+        "Category": "People"
+    },
+    {
+        "ID": "542",
+        "CZ": "ruka",
+        "EN": "hand",
+        "Phonetic": "hænd",
+        "Category": "People"
+    },
+    {
+        "ID": "543",
+        "CZ": "noha",
+        "EN": "leg",
+        "Phonetic": "lɛg",
+        "Category": "People"
+    },
+    {
+        "ID": "544",
+        "CZ": "krk",
+        "EN": "neck",
+        "Phonetic": "nɛk",
+        "Category": "People"
+    },
+    {
+        "ID": "545",
+        "CZ": "pusa",
+        "EN": "mouth",
+        "Phonetic": "maʊθ",
+        "Category": "People"
+    },
+    {
+        "ID": "546",
+        "CZ": "uši",
+        "EN": "ears",
+        "Phonetic": "ɪərz",
+        "Category": "People"
+    },
+    {
+        "ID": "547",
+        "CZ": "vlasy",
+        "EN": "hair",
+        "Phonetic": "hɛər",
+        "Category": "People"
+    },
+    {
+        "ID": "548",
+        "CZ": "nehet",
+        "EN": "nail",
+        "Phonetic": "neɪl",
+        "Category": "People"
+    },
+    {
+        "ID": "549",
+        "CZ": "prst",
+        "EN": "finger",
+        "Phonetic": "ˈfɪŋɡər",
+        "Category": "People"
+    },
+    {
+        "ID": "550",
+        "CZ": "srdce",
+        "EN": "heart",
+        "Phonetic": "hɑːrt",
+        "Category": "People"
+    },
+    {
+        "ID": "551",
+        "CZ": "jazyk",
+        "EN": "tongue",
+        "Phonetic": "tʌŋ",
+        "Category": "People"
+    },
+    {
+        "ID": "552",
+        "CZ": "brada",
+        "EN": "chin",
+        "Phonetic": "tʃɪn",
+        "Category": "People"
+    },
+    {
+        "ID": "553",
+        "CZ": "koleno",
+        "EN": "knee",
+        "Phonetic": "niː",
+        "Category": "People"
+    },
+    {
+        "ID": "554",
+        "CZ": "loket",
+        "EN": "elbow",
+        "Phonetic": "ˈɛlboʊ",
+        "Category": "People"
+    },
+    {
+        "ID": "555",
+        "CZ": "rameno",
+        "EN": "shoulder",
+        "Phonetic": "ˈʃoʊldər",
+        "Category": "People"
+    },
+    {
+        "ID": "556",
+        "CZ": "chodidlo",
+        "EN": "foot",
+        "Phonetic": "fʊt",
+        "Category": "People"
+    },
+    {
+        "ID": "557",
+        "CZ": "kůže",
+        "EN": "skin",
+        "Phonetic": "skɪn",
+        "Category": "People"
+    },
+    {
+        "ID": "558",
+        "CZ": "žaludek",
+        "EN": "stomach",
+        "Phonetic": "ˈstʌmək",
+        "Category": "People"
+    },
+    {
+        "ID": "559",
+        "CZ": "obličej",
+        "EN": "face",
+        "Phonetic": "feɪs",
+        "Category": "People"
+    },
+    {
+        "ID": "560",
+        "CZ": "hlava",
+        "EN": "head",
+        "Phonetic": "hɛd",
+        "Category": "People"
+    },
+    {
+        "ID": "561",
+        "CZ": "obočí",
+        "EN": "eyebrow",
+        "Phonetic": "ˈaɪbraʊ",
+        "Category": "People"
+    },
+    {
+        "ID": "562",
+        "CZ": "pata",
+        "EN": "heel",
+        "Phonetic": "hiːl",
+        "Category": "People"
+    },
+    {
+        "ID": "563",
+        "CZ": "záda",
+        "EN": "back",
+        "Phonetic": "bæk",
+        "Category": "People"
+    },
+    {
+        "ID": "564",
+        "CZ": "zub",
+        "EN": "tooth",
+        "Phonetic": "tuːθ",
+        "Category": "People"
+    },
+    {
+        "ID": "565",
+        "CZ": "páteř",
+        "EN": "spine",
+        "Phonetic": "spaɪn",
+        "Category": "People"
+    },
+    {
+        "ID": "566",
+        "CZ": "bok",
+        "EN": "hip",
+        "Phonetic": "hɪp",
+        "Category": "People"
+    },
+    {
+        "ID": "567",
+        "CZ": "hrudník",
+        "EN": "chest",
+        "Phonetic": "tʃɛst",
+        "Category": "People"
+    },
+    {
+        "ID": "568",
+        "CZ": "pas",
+        "EN": "waist",
+        "Phonetic": "weɪst",
+        "Category": "People"
+    },
+    {
+        "ID": "569",
+        "CZ": "paže",
+        "EN": "arm",
+        "Phonetic": "ɑːrm",
+        "Category": "People"
+    },
+    {
+        "ID": "570",
+        "CZ": "stehno",
+        "EN": "thigh",
+        "Phonetic": "θaɪ",
+        "Category": "People"
+    },
+    {
+        "ID": "571",
+        "CZ": "brýle",
+        "EN": "glasses",
+        "Phonetic": "ˈɡlæsɪz",
+        "Category": "People"
+    },
+    {
+        "ID": "572",
+        "CZ": "dech",
+        "EN": "breath",
+        "Phonetic": "brɛθ",
+        "Category": "People"
+    },
+    {
+        "ID": "573",
+        "CZ": "kost",
+        "EN": "bone",
+        "Phonetic": "boʊn",
+        "Category": "People"
+    },
+    {
+        "ID": "574",
+        "CZ": "klobouk",
+        "EN": "hat",
+        "Phonetic": "hæt",
+        "Category": "People"
+    },
+    {
+        "ID": "575",
+        "CZ": "kabát",
+        "EN": "coat",
+        "Phonetic": "koʊt",
+        "Category": "People"
+    },
+    {
+        "ID": "576",
+        "CZ": "boty",
+        "EN": "shoes",
+        "Phonetic": "ʃuːz",
+        "Category": "People"
+    },
+    {
+        "ID": "577",
+        "CZ": "kalhoty",
+        "EN": "trousers",
+        "Phonetic": "ˈtraʊzərz",
+        "Category": "People"
+    },
+    {
+        "ID": "578",
+        "CZ": "tričko",
+        "EN": "T-shirt",
+        "Phonetic": "ˈtiːʃɜːrt",
+        "Category": "People"
+    },
+    {
+        "ID": "579",
+        "CZ": "ponožky",
+        "EN": "socks",
+        "Phonetic": "sɒks",
+        "Category": "People"
+    },
+    {
+        "ID": "580",
+        "CZ": "nemoc",
+        "EN": "illness",
+        "Phonetic": "ˈɪlnəs",
+        "Category": "People"
+    },
+    {
+        "ID": "581",
+        "CZ": "bolest",
+        "EN": "pain",
+        "Phonetic": "peɪn",
+        "Category": "People"
+    },
+    {
+        "ID": "582",
+        "CZ": "zranění",
+        "EN": "injury",
+        "Phonetic": "ˈɪndʒəri",
+        "Category": "People"
+    }
+]
