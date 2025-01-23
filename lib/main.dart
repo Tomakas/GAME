@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'screens/main_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-/// Hlavní widget aplikace
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Basic Flutter App',
+      title: 'Moje Aplikace',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MainScreen(),
+      // Zde nastavíme startovní (home) stránku
+      home: const HomeScreen(),
     );
   }
 }
