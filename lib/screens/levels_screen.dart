@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../services/utility.dart';
 import 'sub_levels_screen.dart';
 
-/// Zobrazuje hlavní úrovně (1..10). Každá úroveň má 0–3 hvězdičky.
-/// Ty se nyní určují podle součtu hvězdiček v podúrovních.
 class LevelsScreen extends StatefulWidget {
   const LevelsScreen({Key? key}) : super(key: key);
 
@@ -14,57 +12,48 @@ class LevelsScreen extends StatefulWidget {
 class _LevelsScreenState extends State<LevelsScreen> {
   final int totalLevels = 10;
 
-  late List<int> starCounts; // Hvězdy hlavních úrovní (0–3)
+  late List<int> starCounts;
   late List<bool> unlocked;
+
+  // 1) Vytvoříme si službu
+  final LevelStateService _levelService = LevelStateService();
 
   @override
   void initState() {
     super.initState();
-    starCounts = List<int>.filled(totalLevels, 0, growable: false);
-    unlocked = List<bool>.filled(totalLevels, false, growable: false);
+    starCounts = List<int>.filled(totalLevels, 0);
+    unlocked  = List<bool>.filled(totalLevels, false);
 
     _loadLevelStates();
   }
 
-  /// Načte stav hlavních úrovní (jejich hvězdičky 0–3) a zamčení z SharedPreferences.
+  /// 2) Místo přímého volání SharedPreferences, voláme metody _levelService
   Future<void> _loadLevelStates() async {
-    final prefs = await SharedPreferences.getInstance();
+    for (int i = 0; i < totalLevels; i++) {
+      final levelNumber = i + 1;
 
-    for (int level = 1; level <= totalLevels; level++) {
-      // Počet hvězdiček pro hlavní úroveň (0–3, určených součtem z podúrovní)
-      final stars = prefs.getInt('level_$level') ?? 0;
-      starCounts[level - 1] = stars;
+      // Kolik hvězdiček má hlavní úroveň?
+      final stars = await _levelService.getLevelStars(levelNumber);
+      starCounts[i] = stars;
 
-      // Odemčení hlavní úrovně: pokud je level == 1, je vždy odemčená,
-      // jinak se odemkne, pokud předchozí hlavní úroveň má aspoň 1 hvězdičku
-      if (level == 1) {
-        unlocked[level - 1] = true;
-      } else {
-        final prevStars = starCounts[level - 2];
-        unlocked[level - 1] = (prevStars > 0);
-      }
+      // Je úroveň odemčená?
+      final isUnlocked = await _levelService.isLevelUnlocked(levelNumber);
+      unlocked[i] = isUnlocked;
     }
 
     setState(() {});
   }
 
-  /// Resetuje hvězdy i zamčení všech hlavních i podúrovní
+  /// 3) Reset hlavních i podúrovní -> voláme služby
   Future<void> _resetAllLevels() async {
-    final prefs = await SharedPreferences.getInstance();
+    await _levelService.resetAllLevels(totalLevels);
+    await _levelService.resetAllSubLevels(totalLevels, 5);
 
-    // Vynulujeme všechny hlavní úrovně
+    // Po resetu nastavíme v lokální paměti 0 hvězd a
+    // unlocked[0] = true (první úroveň je odemčená).
     for (int i = 0; i < totalLevels; i++) {
       starCounts[i] = 0;
-      await prefs.setInt('level_${i + 1}', 0);
-      unlocked[i] = (i == 0); // Jen první úroveň odemčená
-    }
-
-    // Vynulujeme i podúrovně (5 pro každou hlavní úroveň)
-    for (int mainLevel = 1; mainLevel <= totalLevels; mainLevel++) {
-      for (int sub = 1; sub <= 5; sub++) {
-        final key = 'sub_${mainLevel}_$sub';
-        await prefs.setInt(key, 0);
-      }
+      unlocked[i] = (i == 0);
     }
 
     setState(() {});
@@ -73,18 +62,15 @@ class _LevelsScreenState extends State<LevelsScreen> {
     );
   }
 
-  /// Vrací cestu k ikoně hlavní úrovně (lX_0..lX_3 nebo locked)
+  /// 4) Místo lokální metody _getLevelImagePath voláme ImageLevelManager
   String _getLevelImagePath(int index) {
     final levelNumber = index + 1;
-    if (!unlocked[index]) {
-      return 'lib/res/img/l${levelNumber}_locked.png';
-    }
     final stars = starCounts[index];
-    // 0–3 hvězdiček
-    return 'lib/res/img/l${levelNumber}_$stars.png';
+    final isUnlocked = unlocked[index];
+    return ImageLevelManager.levelImagePath(levelNumber, isUnlocked, stars);
   }
 
-  /// Klik na hlavní úroveň -> otevře se obrazovka podúrovní
+  /// Klik na hlavní úroveň -> otevře sub-levels
   void _onLevelTap(int index) {
     if (!unlocked[index]) {
       ScaffoldMessenger.of(context).showSnackBar(
