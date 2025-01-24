@@ -1,23 +1,22 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // pro rootBundle.loadString
+import 'package:flutter/services.dart';
 import '../services/utility.dart';
 
-/// Tato obrazovka provádí testování slovíček podle vybrané úrovně
-/// a sub-úrovně:
-/// - Úroveň 1 => kategorie "Food"
-/// - Sub-úroveň 1–4 => testujeme jen 1/4 slov z dané kategorie
-/// - Sub-úroveň 5 => testujeme všechna slova z dané kategorie
-///
-/// Po dokončení testu a určení počtu chyb se podle tabulky
-/// (0 chyb = 3 hvězdy, 1 chyba = 2 hvězdy, 2 chyby = 1 hvězda, jinak 0)
-/// nastaví hvězdy v sub-úrovni.
+/// Tato obrazovka:
+/// - Načítá slova z vocabulary.json dle kategorie (mainLevel)
+/// - Sub-úroveň (1..4) dělí slova na 4 segmenty podle ID (bez překryvu),
+/// - Sub-úroveň 5 vezme 20 náhodných slov z celé kategorie.
+/// - Po špatné odpovědi se slovo vrátí do fronty (pendingWords) a znovu se zobrazí.
+/// - Písmena v letterPool se NEOPAKUJÍ (každé písmeno max. 1×), doplní se do 12 distinct.
+/// - Ignorujeme koncovky -s, -es; také tolerujeme rozdíl v koncovém 'e' => "spice" vs. "spices" je OK.
+/// - Po dokončení testu: 0 chyb = 3*, 1 chyba = 2*, 2+ = 1* (aspoň 1 hvězda)
+/// - Ukazujeme 1s zelenou fajfku při správné odpovědi; při chybě dialog se správným slovem.
 class GameScreen extends StatefulWidget {
-  final int mainLevel;     // 1..10
-  final int subLevel;      // 1..5
+  final int mainLevel;   // Např. 1..10
+  final int subLevel;    // Např. 1..5
   final VoidCallback onGameFinished;
-  // Callback, abychom se mohli po skončení vrátit a zaktualizovat UI v SubLevelsScreen
 
   const GameScreen({
     Key? key,
@@ -33,14 +32,35 @@ class GameScreen extends StatefulWidget {
 class _GameScreenState extends State<GameScreen> {
   final LevelStateService _levelService = LevelStateService();
 
-  List<Map<String, dynamic>> allWords = [];
-  List<Map<String, dynamic>> selectedWords = [];
+  /// Seznam všech slov dané kategorie (setříděný podle ID)
+  List<Map<String,dynamic>> sortedCategoryWords = [];
 
-  int currentIndex = 0;    // index právě testovaného slovíčka
-  int mistakesCount = 0;   // počet chyb
+  /// "Čekající" seznam slov, která ještě nebyla správně zodpovězena.
+  List<Map<String,dynamic>> pendingWords = [];
+
+  /// Aktuálně řešené slovo (z pendingWords)
+  Map<String,dynamic>? currentWord;
+
+  /// Počet chyb (špatných odpovědí)
+  int mistakesCount = 0;
 
   bool isLoading = true;
   bool isFinished = false;
+
+  /// Zadávané písmeno (uživatel skládá)
+  String typedAnswer = "";
+
+  /// 12 písmen (distinct)
+  List<String> letterPool = [];
+
+  /// Zda probíhá feedback => zablokujeme tlačítka
+  bool inFeedback = false;
+
+  /// Zobrazíme 1s zelenou fajfku
+  bool showGreenCheck = false;
+
+  /// Kolik slov celkem v sub-úrovni (pro zobrazení "X / total")
+  int initialCount = 0;
 
   @override
   void initState() {
@@ -48,145 +68,294 @@ class _GameScreenState extends State<GameScreen> {
     _loadWordsAndStart();
   }
 
-  /// 1) Načteme JSON (vocabulary.json) a vybereme příslušnou kategorii
+  /// 1) Načteme JSON, setřídíme podle ID, vybereme segment pro sub-level
+  /// 1..4 => rozdělení bez překryvu
+  /// 5 => 20 náhodných
   Future<void> _loadWordsAndStart() async {
     try {
       final dataString = await rootBundle.loadString('lib/res/vocabulary.json');
       final List<dynamic> jsonData = json.decode(dataString);
 
-      // Zde určete kategorii podle mainLevelu:
-      // V zadání: "Téma pro úroveň jedna je 'Food'."
-      // Pokud byste měli pro level 2 "Nature" atd., definujte si mapování:
-      String categoryName = _getCategoryByLevel(widget.mainLevel);
+      final categoryName = _getCategoryByLevel(widget.mainLevel);
 
-      // Filtrovat slova z JSON, která mají "Category": categoryName
-      allWords = jsonData.where((item) {
+      // Filtrovat dle kategorie
+      List<Map<String,dynamic>> filtered = jsonData.where((item) {
         return item['Category'] == categoryName;
       }).map((e) => e as Map<String,dynamic>).toList();
 
-      // Rozhodnout, kolik slov z kategorie vybereme:
-      // subLevel 1-4 => 1/4 slov, subLevel 5 => všechna slova
-      int total = allWords.length;
-      if (widget.subLevel >= 1 && widget.subLevel <= 4) {
-        // Čtvrtinu
-        int quarterCount = (total / 4).ceil();
-        // Vybereme náhodně quarterCount z allWords
-        selectedWords = _randomSample(allWords, quarterCount);
-      } else {
-        // subLevel = 5 => všechna slova
-        selectedWords = List.from(allWords);
+      // Seřadit dle ID (vzestupně)
+      filtered.sort((a,b) {
+        final idA = int.tryParse(a['ID'] ?? '0') ?? 0;
+        final idB = int.tryParse(b['ID'] ?? '0') ?? 0;
+        return idA.compareTo(idB);
+      });
+
+      final N = filtered.length;
+      if (N == 0) {
+        // Nic k zodpovězení
+        setState(() {
+          isLoading = false;
+          isFinished = true;
+        });
+        return;
       }
 
-      // Můžeme dále shuffle(nout) selectedWords, aby byly pokaždé v jiném pořadí
-      selectedWords.shuffle(Random());
+      List<Map<String,dynamic>> chosen = [];
+
+      if (widget.subLevel >= 1 && widget.subLevel <= 4) {
+        // Nepřekrývající se segmenty => 1/4, 2/4, ...
+        final startIndex = (N * (widget.subLevel - 1)) ~/ 4;
+        final endIndex   = (N * widget.subLevel) ~/ 4;
+        chosen = filtered.sublist(startIndex, endIndex);
+        // Můžete shuffle, pokud chcete => chosen.shuffle(Random());
+      } else if (widget.subLevel == 5) {
+        // 20 náhodných z celé kategorie
+        final howMany = min(20, N);
+        chosen = _randomSample(filtered, howMany);
+      }
+
+      sortedCategoryWords = filtered; // jen pro referenci (pokud byste chtěli)
+      pendingWords = List.from(chosen);
+      initialCount = pendingWords.length;
 
       setState(() {
         isLoading = false;
       });
-    } catch (e) {
-      // Ošetřit chybu
-      print('Chyba při načítání JSON: $e');
+
+      _pickNextWord();
+    } catch(e) {
+      print('Load error: $e');
       setState(() {
         isLoading = false;
+        isFinished = true;
       });
     }
   }
 
-  /// Pomocná metoda pro mapování mainLevel -> kategorie
-  String _getCategoryByLevel(int mainLevel) {
-    // Zde si vytvořte vlastní mapování
-    // Např. level 1 => "Food", level 2 => "Nature", atd.
-    // V zadání je uvedeno "Pro level 1 => 'Food'".
-    // V reálném projektu byste to mohli mít v nějaké konfigurační tabulce.
-    switch (mainLevel) {
-      case 1: return "Food";
-      case 2: return "Nature";
-      case 3: return "Animals";
-      case 4: return "Numbers, Colors";
-      case 5: return "Home";
-      case 6: return "Travel";
-      case 7: return "Family";
-      case 8: return "Time";
-      case 9: return "Hobbies";
+  /// Pomocná metoda pro sub-level => kategorie
+  String _getCategoryByLevel(int lvl) {
+    switch (lvl) {
+      case 1:  return "Food";
+      case 2:  return "Nature";
+      case 3:  return "Animals";
+      case 4:  return "Numbers, Colors";
+      case 5:  return "Home";
+      case 6:  return "Travel";
+      case 7:  return "Family";
+      case 8:  return "Time";
+      case 9:  return "Hobbies";
       case 10: return "People";
       default: return "Food";
     }
   }
 
-  /// Metoda pro náhodný výběr 'count' prvků ze seznamu
-  List<Map<String,dynamic>> _randomSample(
-      List<Map<String,dynamic>> source,
-      int count,
-      ) {
+  /// Náhodný sub-seznam
+  List<Map<String,dynamic>> _randomSample(List<Map<String,dynamic>> source, int count) {
     if (count >= source.length) {
       return List.from(source);
     }
-    // Kopii pro shuffle
-    final tempList = List<Map<String,dynamic>>.from(source);
-    tempList.shuffle(Random());
-    return tempList.take(count).toList();
+    final temp = List<Map<String,dynamic>>.from(source);
+    temp.shuffle(Random());
+    return temp.take(count).toList();
   }
 
-  /// 2) Logika pro kliknutí na tlačítko "Správně" / "Chybně"
-  /// (zjednodušená simulace testu)
-  void _answerQuestion(bool wasCorrect) {
-    if (!wasCorrect) {
-      mistakesCount++;
+  /// Vybere další slovo z pendingWords, pokud existuje
+  void _pickNextWord() {
+    if (pendingWords.isEmpty) {
+      _finishTest();
+      return;
     }
-    // Posun na další slovo
-    if (currentIndex < selectedWords.length - 1) {
+    // Vezmeme frontu => first
+    currentWord = pendingWords.first;
+    typedAnswer = "";
+    _prepareLettersForCurrentWord();
+  }
+
+  /// Z listu písmen (slovo) vyrobí set => neduplikovat
+  /// Doplňujeme do 12 distinct písmen => letterPool
+  void _prepareLettersForCurrentWord() {
+    if (currentWord == null) {
+      letterPool = [];
+      return;
+    }
+    final en = (currentWord!['EN'] ?? '') as String;
+    final up = en.trim().toUpperCase();
+
+    // set písmen
+    final wordSet = <String>{};
+    for (var ch in up.split('')) {
+      wordSet.add(ch);
+    }
+
+    var letters = wordSet.toList(); // distinct
+    if (letters.length > 12) {
+      letters = letters.sublist(0, 12);
+    }
+    // Doplň random, aby bylo 12
+    while (letters.length < 12) {
+      final r = _randomLetter();
+      if (!letters.contains(r)) {
+        letters.add(r);
+      }
+    }
+    letters.shuffle(Random());
+    letterPool = letters;
+  }
+
+  /// Náhodné písmeno [A-Z]
+  String _randomLetter() {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    final i = Random().nextInt(alphabet.length);
+    return alphabet[i];
+  }
+
+  /// Klik na písmeno
+  void _onLetterTap(String letter) {
+    if (inFeedback) return;
+    setState(() {
+      typedAnswer += letter;
+    });
+  }
+
+  /// Zpět
+  void _onBackspace() {
+    if (inFeedback) return;
+    if (typedAnswer.isNotEmpty) {
       setState(() {
-        currentIndex++;
+        typedAnswer = typedAnswer.substring(0, typedAnswer.length - 1);
+      });
+    }
+  }
+
+  /// Vymazat
+  void _onClear() {
+    if (inFeedback) return;
+    setState(() {
+      typedAnswer = "";
+    });
+  }
+
+  /// Potvrdit => vyhodnocení
+  void _onConfirm() {
+    if (inFeedback) return;
+    if (currentWord == null) return;
+
+    final enWord = (currentWord!['EN'] ?? '') as String;
+    final correct = _checkWordIgnoringPlural(typedAnswer, enWord);
+
+    if (correct) {
+      // SPRÁVNĚ => 1s fajfka => odebrat slovo z pending
+      setState(() {
+        inFeedback = true;
+        showGreenCheck = true;
+      });
+      Future.delayed(const Duration(seconds: 1), () {
+        setState(() {
+          showGreenCheck = false;
+          inFeedback = false;
+        });
+        // Odebrat slovo z pending
+        pendingWords.remove(currentWord);
+        currentWord = null;
+        _pickNextWord();
       });
     } else {
-      // Dokončeno
-      _finishTest();
+      // ŠPATNĚ => dialog => slovo se vrátí na náhodnou pozici do pending
+      mistakesCount++;
+      setState(() {
+        inFeedback = true;
+      });
+      final correctAnswer = enWord.toUpperCase();
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (_) {
+          return AlertDialog(
+            title: const Text('Špatně'),
+            content: Text('Správná odpověď: $correctAnswer'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                  setState(() {
+                    inFeedback = false;
+                  });
+                  // Vrátit slovo do pending => random index
+                  pendingWords.remove(currentWord);
+                  final idx = Random().nextInt(pendingWords.length + 1);
+                  pendingWords.insert(idx, currentWord!);
+                  currentWord = null;
+                  _pickNextWord();
+                },
+                child: const Text('OK'),
+              )
+            ],
+          );
+        },
+      );
     }
   }
 
-  /// 3) Dokončení testu => vyhodnotíme počet hvězd, uložíme do sub-levelu
+  /// Porovnání s ignorováním -s/-es a tolerancí koncového 'e'
+  bool _checkWordIgnoringPlural(String typed, String correct) {
+    String t = typed.trim().toUpperCase();
+    String c = correct.trim().toUpperCase();
+
+    t = _removePluralEndings(t);
+    c = _removePluralEndings(c);
+
+    // 1) Pokud jsou stejné, OK
+    if (t == c) return true;
+
+    // 2) Tolerovat koncové "E" => "SPIC" vs "SPICE"
+    if (t.endsWith('E') && t.substring(0, t.length - 1) == c) return true;
+    if (c.endsWith('E') && c.substring(0, c.length - 1) == t) return true;
+
+    return false;
+  }
+
+  /// Odebírá -ES, -S
+  String _removePluralEndings(String word) {
+    if (word.endsWith("ES")) {
+      // e.g. "SPICES" => "SPIC"
+      return word.substring(0, word.length - 2);
+    }
+    if (word.endsWith("S")) {
+      // e.g. "DOGS" => "DOG"
+      return word.substring(0, word.length - 1);
+    }
+    return word;
+  }
+
+  /// Dokončení => hvězdy (0chyb=3,1chyb=2,>=2=1)
   Future<void> _finishTest() async {
     setState(() {
       isFinished = true;
     });
-
-    // Podle počtu chyb
-    int earnedStars = 0;
+    int earnedStars;
     if (mistakesCount == 0) {
       earnedStars = 3;
     } else if (mistakesCount == 1) {
       earnedStars = 2;
-    } else if (mistakesCount == 2) {
-      earnedStars = 1;
     } else {
-      earnedStars = 0;
+      earnedStars = 1; // min 1 hvězda
     }
 
-    // Uložit hvězdy do sub-levelu
     await _levelService.setSubLevelStars(widget.mainLevel, widget.subLevel, earnedStars);
-
-    // Přepočítat hvězdy hlavní úrovně (analogicky jako v SubLevelsScreen)
     await _updateMainLevelStars();
 
-    // Po dokončení můžeme zobrazit dialog nebo rovnou volat callback,
-    // a pak se Navigator.pop() do sub-levels screen
     showDialog(
       context: context,
       barrierDismissible: false,
       builder: (_) {
         return AlertDialog(
-          title: const Text('Výsledky testu'),
-          content: Text(
-            'Chyby: $mistakesCount\n'
-                'Získané hvězdy: $earnedStars',
-          ),
+          title: const Text('Výsledek testu'),
+          content: Text('Chyby: $mistakesCount\nZískané hvězdy: $earnedStars'),
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.of(context).pop();
-                // Vrátit se do SubLevelsScreen
-                Navigator.of(context).pop();
-                // Zavolat callback
+                Navigator.of(context).pop();  // Zavřít dialog
+                Navigator.of(context).pop();  // Zavřít GameScreen
                 widget.onGameFinished();
               },
               child: const Text('OK'),
@@ -197,15 +366,13 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  /// Přepočet hvězd hlavní úrovně podle součtu hvězd sub-úrovní (0..15)
   Future<void> _updateMainLevelStars() async {
-    // Sečteme hvězdy všech sub-levelů
     int sumStars = 0;
     for (int subIndex = 1; subIndex <= 5; subIndex++) {
-      int subStars = await _levelService.getSubLevelStars(widget.mainLevel, subIndex);
+      final subStars = await _levelService.getSubLevelStars(widget.mainLevel, subIndex);
       sumStars += subStars;
     }
-    // sumStars = 0..15 => mapování 0–4 -> 0, 5–9 -> 1, 10–14 -> 2, 15 -> 3
+
     int mainLevelStars;
     if (sumStars < 5) {
       mainLevelStars = 0;
@@ -216,7 +383,6 @@ class _GameScreenState extends State<GameScreen> {
     } else {
       mainLevelStars = 3;
     }
-
     await _levelService.setLevelStars(widget.mainLevel, mainLevelStars);
   }
 
@@ -227,81 +393,139 @@ class _GameScreenState extends State<GameScreen> {
         body: Center(child: CircularProgressIndicator()),
       );
     }
-    if (selectedWords.isEmpty) {
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text('Test slovíček'),
-        ),
-        body: const Center(
-          child: Text('V této kategorii nejsou k dispozici žádná slovíčka.'),
-        ),
-      );
-    }
-
     if (isFinished) {
-      // Po dokončení testu (zde můžeme zobrazit nějakou "Gratulaci"
-      // nebo jsme to už vyřešili AlertDialogem v _finishTest())
+      // test se ukončil => nic
       return Container();
     }
 
-    // Získáme právě testované slovíčko
-    final currentWord = selectedWords[currentIndex];
-    final enWord = currentWord['EN'] ?? '(??)';
-    final czWord = currentWord['CZ'] ?? '(??)';
+    if (currentWord == null && pendingWords.isNotEmpty) {
+      // v pickNextWord => waiting
+      return const Scaffold(body: SizedBox());
+    }
+
+    // Kolik dokončeno:
+    final doneCount = initialCount - pendingWords.length;
+    final totalCount = initialCount;
+
+    final czText = (currentWord == null) ? "" : (currentWord!['CZ'] ?? "");
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Test (sub-level ${widget.subLevel})'),
+        title: Text('Slovo: $doneCount / $totalCount'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            Text(
-              'Otázka ${currentIndex + 1} / ${selectedWords.length}',
-              style: const TextStyle(fontSize: 20),
-            ),
-            const SizedBox(height: 20),
-            Text(
-              // Např. zobrazíme EN slovo a uživatel má říci, co je to česky
-              'Anglické slovíčko: $enWord\n\n'
-                  'Jak se řekne česky?',
-              style: const TextStyle(fontSize: 24),
-              textAlign: TextAlign.center,
-            ),
+      body: Stack(
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // ČESKÉ SLOVO - modře, uppercase
+              Container(
+                padding: const EdgeInsets.all(16),
+                child: Text(
+                  czText.toString().toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: 24,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
 
-            const Spacer(),
+              // 12 distinct písmen
+              Expanded(
+                child: GridView.count(
+                  crossAxisCount: 4,  // 4 sloupce => 3 řádky = 12
+                  mainAxisSpacing: 8,
+                  crossAxisSpacing: 8,
+                  padding: const EdgeInsets.all(8),
+                  children: List.generate(12, (i) {
+                    final letter = (letterPool.length > i) ? letterPool[i] : '#';
+                    return ElevatedButton(
+                      onPressed: inFeedback ? null : () => _onLetterTap(letter),
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(64, 64),
+                        textStyle: const TextStyle(fontSize: 24),
+                      ),
+                      child: Text(letter),
+                    );
+                  }),
+                ),
+              ),
 
-            // Zjednodušeně: uživatel řekne, zda "odpověděl správně" nebo "špatně"
-            // V reálné aplikaci byste měli textfield, multiple choice, apod.
-            ElevatedButton.icon(
-              onPressed: () => _answerQuestion(false),
-              icon: const Icon(Icons.close),
-              label: const Text('Chybně'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
+              // Zobrazení typedAnswer
+              Container(
+                padding: const EdgeInsets.all(16),
+                child: Text(
+                  typedAnswer.toString().toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: 24,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+
+              // Tlačítka dole
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: inFeedback ? null : _onBackspace,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.orange,
+                          minimumSize: const Size(64, 48),
+                          textStyle: const TextStyle(fontSize: 18),
+                        ),
+                        child: const Text('Zpět'),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: inFeedback ? null : _onClear,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red,
+                          minimumSize: const Size(64, 48),
+                          textStyle: const TextStyle(fontSize: 18),
+                        ),
+                        child: const Text('Vymazat'),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: inFeedback ? null : _onConfirm,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.green,
+                          minimumSize: const Size(64, 48),
+                          textStyle: const TextStyle(fontSize: 18),
+                        ),
+                        child: const Text('Potvrdit'),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+
+          // Overlay fajfka (1s) při správné odpovědi
+          if (showGreenCheck)
+            Container(
+              color: Colors.black54,
+              child: const Center(
+                child: Icon(
+                  Icons.check_circle,
+                  color: Colors.green,
+                  size: 120,
+                ),
               ),
             ),
-            const SizedBox(height: 16),
-            ElevatedButton.icon(
-              onPressed: () => _answerQuestion(true),
-              icon: const Icon(Icons.check),
-              label: const Text('Správně'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
-              ),
-            ),
-
-            const Spacer(),
-
-            // Pro informaci zobrazíme i "CZ" slovíčko
-            // (v reálném kvízu by to bylo až po vyhodnocení)
-            Text(
-              'Správná odpověď: $czWord',
-              style: const TextStyle(color: Colors.grey, fontSize: 16),
-            ),
-          ],
-        ),
+        ],
       ),
     );
   }
