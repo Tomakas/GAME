@@ -15,37 +15,31 @@ class _LevelsScreenState extends State<LevelsScreen> {
   late List<int> starCounts;
   late List<bool> unlocked;
 
-  // 1) Vytvoříme si službu
   final LevelStateService _levelService = LevelStateService();
 
   @override
   void initState() {
     super.initState();
     starCounts = List<int>.filled(totalLevels, 0);
-    unlocked  = List<bool>.filled(totalLevels, false);
+    unlocked = List<bool>.filled(totalLevels, false);
 
     _loadLevelStates();
   }
 
-  /// 2) Místo přímého volání SharedPreferences, voláme metody _levelService
+  /// Načtení hvězdiček a zamknutí/odemčení
   Future<void> _loadLevelStates() async {
     for (int i = 0; i < totalLevels; i++) {
       final levelNumber = i + 1;
-
-      // Kolik hvězdiček má hlavní úroveň?
       final stars = await _levelService.getLevelStars(levelNumber);
       starCounts[i] = stars;
 
-      // Je úroveň odemčená?
       final isUnlocked = await _levelService.isLevelUnlocked(levelNumber);
       unlocked[i] = isUnlocked;
     }
-
     setState(() {});
   }
 
-
-  /// 4) Místo lokální metody _getLevelImagePath voláme ImageLevelManager
+  /// Cesta k obrázku hlavní úrovně
   String _getLevelImagePath(int index) {
     final levelNumber = index + 1;
     final stars = starCounts[index];
@@ -53,14 +47,8 @@ class _LevelsScreenState extends State<LevelsScreen> {
     return ImageLevelManager.levelImagePath(levelNumber, isUnlocked, stars);
   }
 
-  /// Klik na hlavní úroveň -> otevře sub-levels
+  /// Klik na úroveň (jen pokud je unlocked[index] = true)
   void _onLevelTap(int index) {
-    if (!unlocked[index]) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Tato úroveň je zatím zamčená.')),
-      );
-      return;
-    }
     final mainLevel = index + 1;
 
     Navigator.push(
@@ -78,7 +66,11 @@ class _LevelsScreenState extends State<LevelsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hlavní úrovně')
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
+        ),
+        title: const Text('Hlavní úrovně'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -92,8 +84,12 @@ class _LevelsScreenState extends State<LevelsScreen> {
           ),
           itemBuilder: (context, index) {
             final path = _getLevelImagePath(index);
+
+            // Pokud je úroveň zamčená, onTap = null => tlačítko nebude reagovat
+            final isUnlocked = unlocked[index];
+
             return GestureDetector(
-              onTap: () => _onLevelTap(index),
+              onTap: isUnlocked ? () => _onLevelTap(index) : null,
               child: Image.asset(path),
             );
           },
