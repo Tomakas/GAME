@@ -44,23 +44,6 @@ class _LevelsScreenState extends State<LevelsScreen> {
     setState(() {});
   }
 
-  /// 3) Reset hlavních i podúrovní -> voláme služby
-  Future<void> _resetAllLevels() async {
-    await _levelService.resetAllLevels(totalLevels);
-    await _levelService.resetAllSubLevels(totalLevels, 5);
-
-    // Po resetu nastavíme v lokální paměti 0 hvězd a
-    // unlocked[0] = true (první úroveň je odemčená).
-    for (int i = 0; i < totalLevels; i++) {
-      starCounts[i] = 0;
-      unlocked[i] = (i == 0);
-    }
-
-    setState(() {});
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Reset hotov: všechny úrovně i podúrovně vynulovány.')),
-    );
-  }
 
   /// 4) Místo lokální metody _getLevelImagePath voláme ImageLevelManager
   String _getLevelImagePath(int index) {
