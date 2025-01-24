@@ -95,13 +95,7 @@ class _LevelsScreenState extends State<LevelsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hlavní úrovně'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.refresh),
-            onPressed: _resetAllLevels,
-          ),
-        ],
+        title: const Text('Hlavní úrovně')
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
